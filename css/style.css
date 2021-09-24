@@ -1,8 +1,19 @@
 /* Reset CSS */
+@font-face {
+  font-family: Lausanne;
+  src: url("/Users/dahyun/Desktop/HHHA/ARCHIVE/HHHA/font/TWKLausanne/TWKLausanne-400Italic.ttf") format("truetype-variations");
+}
+@font-face {
+  font-family: Neutronic;
+  src: url("/Users/dahyun/Desktop/HHHA/ARCHIVE/HHHA/font/Neutronic/NeutronicHangeul-Regularv0.3.woff2");
+}
+
 html, body {
   background: #fff;
   z-index: 1;
-  font-size: 16px;
+  /* font-size: 16px; */
+  font-size: 10vh;
+  font-family: 'Neutronic';
   padding: 0;
   margin: 0;
   text-rendering: optimizeLegibility;
@@ -28,5 +39,6 @@ ul, li {
 
 #coffee {
   color: red;
-  font-size: 30vh;
+  font-size: 10vh;
+  font-family: 'Neutronic';
 }
