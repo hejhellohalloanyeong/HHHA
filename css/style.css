@@ -1,7 +1,7 @@
 /* Reset CSS */
 @font-face {
   font-family: Lausanne;
-  src: url("../font/TWKLausanne/TWKLausanne-400Italic.ttf") format("truetype-variations");
+  src: url("../font/TWKLausanne/TWKLausanne-450.ttf") format("truetype-variations");
 }
 @font-face {
   font-family: Neutronic;
@@ -13,7 +13,7 @@ html, body {
   z-index: 1;
   /* font-size: 16px; */
   font-size: 10vh;
-  font-family: 'Neutronic';
+  font-family: 'Lausanne';
   padding: 0;
   margin: 0;
   text-rendering: optimizeLegibility;
@@ -23,6 +23,11 @@ html, body {
 
 a, button, input, label {
   cursor: pointer;
+}
+
+a{
+  text-decoration-line: none;
+  color: black;
 }
 
 *, *:after, *:before {
@@ -37,8 +42,44 @@ ul, li {
   padding: 0;
 }
 
-#coffee {
-  color: red;
+.nav_menu{
+  position: relative;
+}
+
+.menu{
+  position: absolute;
+  box-shadow: 2px 2px 2px 2px grey;
+  padding: 3px;
+}
+
+#menu_HHHA{
+  margin-left: 0;
+  margin-top: 5%;
   font-size: 10vh;
-  font-family: 'Neutronic';
+  /* border: 2px solid coral; */
+  transform: rotate(-90deg);
+}
+
+#menu_About{
+  margin-left: 10%;
+  margin-top: 5%;
+  font-size: 10vh;
+  /* border: 2px solid coral; */
+  transform: rotate(-90deg);
+}
+
+#menu_Contact{
+  margin-left: 15%;
+  margin-top: 7%;
+  font-size: 10vh;
+  /* border: 2px solid coral; */
+  transform: rotate(-90deg);
+}
+
+#menu_Alphabetproj{
+  margin-left: 20%;
+  margin-top: 15%;
+  font-size: 10vh;
+  /* border: 2px solid coral; */
+  transform: rotate(-90deg);
 }
