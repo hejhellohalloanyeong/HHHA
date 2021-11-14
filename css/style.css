@@ -9,7 +9,6 @@
 }
 
 html, body {
-  background: #fff;
   z-index: 1;
   /* font-size: 16px; */
   font-size: 10vh;
@@ -19,6 +18,10 @@ html, body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+body{
+  overflow: hidden;
 }
 
 a, button, input, label {
@@ -48,59 +51,105 @@ ul, li {
 
 .menu{
   position: absolute;
-  box-shadow: 2px 2px 2px 2px grey;
-  padding: 3px;
-  z-index: 0;
+  box-shadow: 1px 0px 10px 0px rgb(61, 61, 61);
+  width: 300px;
+  writing-mode: vertical-lr;
+  font-size: 10vh;
+  padding: 10px 0px;
+  background-color: white;
+  border-radius: 20px;
 }
 
+#HHHA_contents, #About_contents, #Contact_contents, #Alphabetproj_contents{
+  background-color: white;
+  height: 100vh;
+  position: absolute;
+  box-shadow: 1px 0px 10px 0px rgb(61, 61, 61);
+  overflow: scroll;
+}
+
+
+/* Menu: HHHA */
 .HHHA_container{
-  margin-left: 0;
+  margin-left: 0%;
   position: relative;
 }
 
 #HHHA{
-  height: 80px;
-  margin-left: -50px;
-  margin-top: 5%;
-  font-size: 10vh;
-  transform: rotate(-90deg);
-  /* border: 2px solid coral; */
+  margin-left: 20px;
+  margin-top: 1%;
+  z-index: 0;
 }
 
 #HHHA_contents{
   margin-top: 0px;
-  margin-left: 95px;
-  position: absolute;
-  width: 500px;
-  height: 100vh;
-  box-shadow: 2px 2px 2px 2px rgb(255, 73, 73);
-  background-color: white;
+  margin-left: 110px;
+  width: 90vw;
   z-index: 1;
+  padding: 10px 20px;
 }
 
-#menu_About{
+h1{
+  margin: 0;
+  font-size: 13vh;
+  font-family: 'Lausanne';
+}
+
+/* Menu: About */
+.About_container{
+  margin-left: 0%;
+  position: relative;
+}
+
+#About{
   z-index: 2;
-  margin-left: 10%;
-  margin-top: 5%;
-  font-size: 10vh;
-  /* border: 2px solid coral; */
-  transform: rotate(-90deg);
+  margin-left: 760px;
+  margin-top: 8%;
 }
 
-#menu_Contact{
+#About_contents{
+  margin-top: 0px;
+  margin-left: 850px;
   z-index: 3;
-  margin-left: 15%;
-  margin-top: 7%;
-  font-size: 10vh;
-  /* border: 2px solid coral; */
-  transform: rotate(-90deg);
+  width: 90vw;
 }
 
-#menu_Alphabetproj{
+
+/* Menu: Contact */
+.Contact_container{
+  margin-left: 0%;
+  position: relative;
+}
+
+#Contact{
   z-index: 4;
-  margin-left: 20%;
+  margin-left: 850px;
+  margin-top: 11%;
+}
+
+#Contact_contents{
+  margin-top: 0px;
+  margin-left: 930px;
+  z-index: 5;
+  width: 90vw;
+}
+
+/* Menu: Alphabetproj */
+.Alphabetproj_container{
+  margin-left: 0%;
+  position: relative;
+}
+
+#Alphabetproj{
+  z-index: 6;
+  margin-left: 930px;
   margin-top: 15%;
-  font-size: 10vh;
   /* border: 2px solid coral; */
-  transform: rotate(-90deg);
+}
+
+#Alphabetproj_contents{
+  margin-top: 0px;
+  margin-left: 1020px;
+  z-index: 7;
+  width: 90vw;
 }
