@@ -1,7 +1,7 @@
 /* Reset CSS */
 @font-face {
   font-family: Lausanne;
-  src: url("../font/TWKLausanne/TWKLausanne-450.ttf") format("truetype-variations");
+  src: url("../font/TWKLausanne/TWKLausanne-350.ttf") format("truetype-variations");
   }
   @font-face {
   font-family: Neutronic;
@@ -75,7 +75,7 @@ ul, li {
   .grow .item .text {
       position: absolute;
       font-size: 4vw;
-      font-weight: 800;
+      /* font-weight: 800; */
       font-family: "Lausanne";
       line-height: 120%;
       letter-spacing: -1px;
@@ -91,7 +91,7 @@ ul, li {
       transition-duration: 0.1s;
       transition-delay: 0;
       transition-timing-function: linear, ease;
-      box-shadow: 0 0 30px black;
+      box-shadow: 0 0 20px black;
   }
 
   .grow .item:hover .text {
