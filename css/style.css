@@ -2,11 +2,11 @@
 @font-face {
   font-family: Lausanne;
   src: url("../font/TWKLausanne/TWKLausanne-450.ttf") format("truetype-variations");
-}
-@font-face {
+  }
+  @font-face {
   font-family: Neutronic;
   src: url("../font/Neutronic/NeutronicHangeul-Regularv0.3.woff2");
-}
+  }
 
 html, body {
   z-index: 1;
@@ -21,7 +21,10 @@ html, body {
 }
 
 body{
-  overflow: hidden;
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+  cursor: url("cursor2.png"), pointer;
 }
 
 a, button, input, label {
@@ -45,111 +48,111 @@ ul, li {
   padding: 0;
 }
 
-.nav_menu{
-  position: relative;
-}
+  .grow {
+      padding: 0 0px;
+      height: 100vh;
+      box-sizing: border-box;
+      display: flex;
+  }
 
-.menu{
-  position: absolute;
-  box-shadow: 1px 0px 10px 0px rgb(61, 61, 61);
-  width: 300px;
-  writing-mode: vertical-lr;
-  font-size: 10vh;
-  padding: 10px 0px;
-  background-color: white;
-  border-radius: 20px;
-}
+  .grow .item {
+      box-sizing: border-box;
+      flex-grow: 2;
+      transition: width 0.6s ease;
+      width: 0;
+      box-shadow: 0 0 15px black;
+  }
 
-#HHHA_contents, #About_contents, #Contact_contents, #Alphabetproj_contents{
-  background-color: white;
-  height: 100vh;
-  position: absolute;
-  box-shadow: 1px 0px 10px 0px rgb(61, 61, 61);
-  overflow: scroll;
-}
+  .grow .item:hover {
+      width: 60%;
+  }
 
+  .grow .item {
+      position: relative;
+      overflow: hidden;
+  }
 
-/* Menu: HHHA */
-.HHHA_container{
-  margin-left: 0%;
-  position: relative;
-}
+  .grow .item .text {
+      position: absolute;
+      font-size: 4vw;
+      font-weight: 800;
+      font-family: "Lausanne";
+      line-height: 120%;
+      letter-spacing: -1px;
+      color: #000;
+      top: 0%;
+      margin-left: auto;
+      margin-right: auto;
+      left: 0;
+      right: 0;
+      width: 100%;
+      text-align: left;
+      transition-property: opacity, bottom;
+      transition-duration: 0.1s;
+      transition-delay: 0;
+      transition-timing-function: linear, ease;
+      box-shadow: 0 0 30px black;
+  }
 
-#HHHA{
-  margin-left: 20px;
-  margin-top: 1%;
-  z-index: 0;
-}
+  .grow .item:hover .text {
+      opacity: 1;
+      hyphens: auto;
+      font-size: 6.7vw;
+      transition-duration: 0.3s, 0.7s;
+      transition-delay: 0.4s, 0.2s;
+  }
 
-#HHHA_contents{
-  margin-top: 0px;
-  margin-left: 110px;
-  width: 90vw;
-  z-index: 1;
-  padding: 10px 20px;
-}
+  .grow .item:before {
+      content: "";
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      background-color: currentColor;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 5% 5%;
+  }
 
-h1{
-  margin: 0;
-  font-size: 13vh;
-  font-family: 'Lausanne';
-}
+  .grow .item:nth-child(3n):before {
+      background-position: 25% 25%;
+  }
 
-/* Menu: About */
-.About_container{
-  margin-left: 0%;
-  position: relative;
-}
+  .grow .item:nth-child(3n-1):before {
+      background-position: 45% 45%;
+  }
 
-#About{
-  z-index: 2;
-  margin-left: 760px;
-  margin-top: 8%;
-}
+  .grow .item:nth-child(3n-2):before {
+      background-position: 65% 65%;
+  }
 
-#About_contents{
-  margin-top: 0px;
-  margin-left: 850px;
-  z-index: 3;
-  width: 90vw;
-}
+  .grow .item:nth-child(3n-3):before {
+      background-position: 85% 85%;
+  }
 
+  #test{
+      overflow-y: scroll;
+  }
 
-/* Menu: Contact */
-.Contact_container{
-  margin-left: 0%;
-  position: relative;
-}
+  .item_title{
+      box-shadow: 1px 0px 10px 0px rgb(61, 61, 61);
+      /* width: 300px; */
+      height: auto;
+      writing-mode: vertical-lr;
+      font-size: 10vh;
+      padding: 10px 0px;
+      background-color: white;
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
+      writing-mode: vertical-rl
+  }
 
-#Contact{
-  z-index: 4;
-  margin-left: 850px;
-  margin-top: 11%;
-}
-
-#Contact_contents{
-  margin-top: 0px;
-  margin-left: 930px;
-  z-index: 5;
-  width: 90vw;
-}
-
-/* Menu: Alphabetproj */
-.Alphabetproj_container{
-  margin-left: 0%;
-  position: relative;
-}
-
-#Alphabetproj{
-  z-index: 6;
-  margin-left: 930px;
-  margin-top: 15%;
-  /* border: 2px solid coral; */
-}
-
-#Alphabetproj_contents{
-  margin-top: 0px;
-  margin-left: 1020px;
-  z-index: 7;
-  width: 90vw;
-}
+  #HHHA_text, #about_text{
+      font-family: 'Lausanne';
+      font-size: 2.2vw;
+      letter-spacing: 0px;
+      line-height: 135%;
+      padding-left: 3%;
+      padding-right: 3%;
+  }
