@@ -59,7 +59,7 @@ ul, li {
       box-sizing: border-box;
       flex-grow: 2;
       transition: width 0.6s ease;
-      width: 0;
+      width: 0%;
       box-shadow: 0 0 15px black;
   }
 
@@ -138,21 +138,31 @@ ul, li {
   .item_title{
       box-shadow: 1px 0px 10px 0px rgb(61, 61, 61);
       /* width: 300px; */
-      height: auto;
-      writing-mode: vertical-lr;
       font-size: 10vh;
+      height: 80%;
       padding: 10px 0px;
-      background-color: white;
+      background-color: gray;
       border-top-right-radius: 20px;
       border-bottom-right-radius: 20px;
       writing-mode: vertical-rl
   }
 
-  #HHHA_text, #about_text{
-      font-family: 'Lausanne';
-      font-size: 2.2vw;
-      letter-spacing: 0px;
-      line-height: 135%;
-      padding-left: 3%;
-      padding-right: 3%;
+
+  #HHHA_text{
+      padding: 0%;
+      margin: 0;
+  }
+
+#about_text{
+    font-family: 'Lausanne';
+    font-size: 1.6vw;
+    letter-spacing: 0px;
+    line-height: 135%;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+  #textbox_HHHA{
+      background-color: white;
+      height: 100%;
   }
