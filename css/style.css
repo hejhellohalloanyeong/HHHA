@@ -97,13 +97,13 @@ ul, li {
       box-shadow: 0 0 20px rgb(0, 0, 0);
   }
 
-  /* .grow .text {
+  .grow .text:hover {
       opacity: 1;
       hyphens: auto;
       font-size: 6.7vw;
       transition-duration: 0.3s, 0.7s;
       transition-delay: 0.4s, 0.2s;
-  } */
+  }
 
   .grow .item:before {
       content: "";
