@@ -115,22 +115,6 @@ ul, li {
       background-position: 5% 5%;
   }
 
-  .grow .item:nth-child(3n):before {
-      background-position: 25% 25%;
-  }
-
-  .grow .item:nth-child(3n-1):before {
-      background-position: 45% 45%;
-  }
-
-  .grow .item:nth-child(3n-2):before {
-      background-position: 65% 65%;
-  }
-
-  .grow .item:nth-child(3n-3):before {
-      background-position: 85% 85%;
-  }
-
   #test{
       overflow-y: scroll;
   }
@@ -146,7 +130,6 @@ ul, li {
       border-bottom-right-radius: 20px;
       writing-mode: vertical-rl
   }
-
 
   #HHHA_text{
       padding: 0%;
