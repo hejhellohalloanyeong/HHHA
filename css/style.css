@@ -157,7 +157,3 @@ li {
   background-color: white;
   height: 100%;
 }
-
-input:checked + .item {
-  color: green;
-}
