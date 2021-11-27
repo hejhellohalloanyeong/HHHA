@@ -2,13 +2,15 @@
 @font-face {
   font-family: Lausanne;
   src: url("../font/TWKLausanne/TWKLausanne-350.ttf") format("truetype-variations");
-  }
-  @font-face {
+}
+
+@font-face {
   font-family: Neutronic;
   src: url("../font/Neutronic/NeutronicHangeul-Regularv0.3.woff2");
-  }
+}
 
-html, body {
+html,
+body {
   z-index: 1;
   /* font-size: 16px; */
   font-size: 10vh;
@@ -20,132 +22,142 @@ html, body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-body{
+body {
   margin: 0 auto;
   height: 100%;
   width: 100%;
   cursor: url("cursor2.png"), pointer;
 }
 
-a, button, input, label {
+a,
+button,
+input,
+label {
   cursor: pointer;
 }
 
-a{
+a {
   text-decoration-line: none;
   color: black;
 }
 
-*, *:after, *:before {
+*,
+*:after,
+*:before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-ul, li {
+ul,
+li {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-  .grow {
-      padding: 0 0px;
-      height: 100vh;
-      box-sizing: border-box;
-      display: flex;
-  }
-
-  .grow .item {
-      box-sizing: border-box;
-      flex-grow: 2;
-      transition: width 0.6s ease;
-      width: 0%;
-      box-shadow: 0 0 15px black;
-  }
-
-  .grow .item:hover {
-      width: 60%;
-  }
-
-  .grow .item {
-      position: relative;
-      overflow: hidden;
-  }
-
-  .grow .item .text {
-      position: absolute;
-      font-size: 4vw;
-      /* font-weight: 800; */
-      font-family: "Lausanne";
-      line-height: 120%;
-      letter-spacing: -1px;
-      color: #000;
-      top: 0%;
-      margin-left: auto;
-      margin-right: auto;
-      left: 0;
-      right: 0;
-      width: 100%;
-      text-align: left;
-      transition-property: opacity, bottom;
-      transition-duration: 0.1s;
-      transition-delay: 0;
-      transition-timing-function: linear, ease;
-      box-shadow: 0 0 20px black;
-  }
-
-  .grow .item:hover .text {
-      opacity: 1;
-      hyphens: auto;
-      font-size: 6.7vw;
-      transition-duration: 0.3s, 0.7s;
-      transition-delay: 0.4s, 0.2s;
-  }
-
-  .grow .item:before {
-      content: "";
-      position: absolute;
-      top: 0px;
-      right: 0px;
-      bottom: 0px;
-      left: 0px;
-      background-color: currentColor;
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: 5% 5%;
-  }
-
-  #test{
-      overflow-y: scroll;
-  }
-
-  .item_title{
-      box-shadow: 1px 0px 10px 0px rgb(61, 61, 61);
-      /* width: 300px; */
-      font-size: 10vh;
-      height: 80%;
-      padding: 10px 0px;
-      background-color: gray;
-      border-top-right-radius: 20px;
-      border-bottom-right-radius: 20px;
-      writing-mode: vertical-rl
-  }
-
-  #HHHA_text{
-      padding: 0%;
-      margin: 0;
-  }
-
-#about_text{
-    font-family: 'Lausanne';
-    font-size: 1.6vw;
-    letter-spacing: 0px;
-    line-height: 135%;
-    padding-left: 3%;
-    padding-right: 3%;
+.grow {
+  padding: 0 0px;
+  height: 100vh;
+  box-sizing: border-box;
+  display: flex;
 }
 
-  #textbox_HHHA{
-      background-color: white;
-      height: 100%;
-  }
+.grow .item {
+  box-sizing: border-box;
+  flex-grow: 2;
+  transition: width 0.6s ease;
+  width: 0%;
+  box-shadow: 0 0 15px black;
+}
+
+.grow .item:hover {
+  width: 60%;
+}
+
+.grow .item {
+  position: relative;
+  overflow: hidden;
+}
+
+.grow .item .text {
+  position: absolute;
+  font-size: 4vw;
+  /* font-weight: 800; */
+  font-family: "Lausanne";
+  line-height: 120%;
+  letter-spacing: -1px;
+  color: #000;
+  top: 0%;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  width: 100%;
+  text-align: left;
+  transition-property: opacity, bottom;
+  transition-duration: 0.1s;
+  transition-delay: 0;
+  transition-timing-function: linear, ease;
+  box-shadow: 0 0 20px black;
+}
+
+.grow .item:hover .text {
+  opacity: 1;
+  hyphens: auto;
+  font-size: 6.7vw;
+  transition-duration: 0.3s, 0.7s;
+  transition-delay: 0.4s, 0.2s;
+}
+
+.grow .item:before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: currentColor;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 5% 5%;
+}
+
+#test {
+  overflow-y: scroll;
+}
+
+.item_title {
+  box-shadow: 1px 0px 10px 0px rgb(61, 61, 61);
+  /* width: 300px; */
+  font-size: 10vh;
+  height: 80%;
+  padding: 10px 0px;
+  background-color: gray;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  writing-mode: vertical-rl
+}
+
+#HHHA_text {
+  padding: 0%;
+  margin: 0;
+}
+
+#about_text {
+  font-family: 'Lausanne';
+  font-size: 1.6vw;
+  letter-spacing: 0px;
+  line-height: 135%;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+#textbox_HHHA {
+  background-color: white;
+  height: 100%;
+}
+
+input:checked + .item {
+  color: green;
+}
