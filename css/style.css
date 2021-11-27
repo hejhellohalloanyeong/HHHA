@@ -63,13 +63,16 @@ ul, li {
       box-shadow: 0 0 15px black;
   }
 
-  .grow .item:hover {
+  
+
+  /* .grow .item:hover {
       width: 60%;
-  }
+  } */
 
   .grow .item {
       position: relative;
       overflow: hidden;
+      color: white;
   }
 
   .grow .item .text {
@@ -91,16 +94,16 @@ ul, li {
       transition-duration: 0.1s;
       transition-delay: 0;
       transition-timing-function: linear, ease;
-      box-shadow: 0 0 20px black;
+      box-shadow: 0 0 20px rgb(0, 0, 0);
   }
 
-  .grow .item:hover .text {
+  /* .grow .text {
       opacity: 1;
       hyphens: auto;
       font-size: 6.7vw;
       transition-duration: 0.3s, 0.7s;
       transition-delay: 0.4s, 0.2s;
-  }
+  } */
 
   .grow .item:before {
       content: "";
@@ -149,3 +152,34 @@ ul, li {
       background-color: white;
       height: 100%;
   }
+
+
+
+.item_60{
+  color: black;
+  transition-duration: 0.3s, 0.7s;
+  transition-delay: 0.4s, 0.2s;
+  box-shadow: 0 0 20px black;
+  width: 60%;
+}
+
+.grow .item_60 .text {
+  font-size: 4vw;
+  /* font-weight: 800; */
+  font-family: "Lausanne";
+  line-height: 120%;
+  letter-spacing: -1px;
+  color: #000;
+  top: 0%;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  width: 100%;
+  text-align: left;
+  transition-property: opacity, bottom;
+  transition-duration: 0.1s;
+  transition-delay: 0;
+  transition-timing-function: linear, ease;
+  box-shadow: 0 0 20px rgb(0, 0, 0);
+}
