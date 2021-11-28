@@ -61,18 +61,16 @@ ul, li {
       transition: width 0.6s ease;
       width: 0%;
       box-shadow: 0 0 15px black;
-  }
-
-  
-
-  /* .grow .item:hover {
-      width: 60%;
-  } */
-
-  .grow .item {
       position: relative;
       overflow: hidden;
       color: white;
+  }
+
+  .grow .item:hover {
+    transform: rotate(-4deg);
+    width: 5%;
+    position: relative;
+    transform-origin: 15% 1%;
   }
 
   .grow .item .text {
@@ -99,13 +97,13 @@ ul, li {
 
   .grow .text:hover {
       opacity: 1;
-      hyphens: auto;
+      /* hyphens: auto; */
       font-size: 6.7vw;
       transition-duration: 0.3s, 0.7s;
       transition-delay: 0.4s, 0.2s;
   }
 
-  .grow .item:before {
+    .grow .item:before {
       content: "";
       position: absolute;
       top: 0px;
@@ -134,7 +132,7 @@ ul, li {
       writing-mode: vertical-rl
   }
 
-  #HHHA_text{
+#HHHA_text{
       padding: 0%;
       margin: 0;
   }
@@ -148,12 +146,27 @@ ul, li {
     padding-right: 3%;
 }
 
-  #textbox_HHHA{
+#textbox_HHHA{
       background-color: white;
       height: 100%;
   }
 
+.container{
+  margin-top: 2vh;
+  margin-left: 2vh;
+  margin-right: 2vh;
+  grid-template-columns: 1fr 1fr;
+  display: grid;
+}
 
+.desImage{
+  margin-right: 2vh;
+}
+
+.desText{
+  font-size: 1.3vw;
+  color:rgb(0, 0, 0);
+}
 
 .item_60{
   color: rgb(255, 0, 0);
