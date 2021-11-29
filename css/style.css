@@ -67,7 +67,7 @@ ul, li {
   }
 
   .grow .item:hover {
-    transform: rotate(-4deg);
+    transform: rotate(-1deg);
     width: 5%;
     position: relative;
     transform-origin: 15% 1%;
@@ -111,6 +111,7 @@ ul, li {
       bottom: 0px;
       left: 0px;
       background-color: currentColor;
+      /* background-image: url("image.png"); */
       background-size: cover;
       background-repeat: no-repeat;
       background-position: 5% 5%;
@@ -129,7 +130,7 @@ ul, li {
       background-color: gray;
       border-top-right-radius: 20px;
       border-bottom-right-radius: 20px;
-      writing-mode: vertical-rl
+      writing-mode: vertical-rl;
   }
 
 #HHHA_text{
