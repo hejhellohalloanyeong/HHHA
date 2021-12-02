@@ -177,9 +177,7 @@ li {
 }
 
 #main {
-  
-  background-color: white;
-
+  background-color: #FFE749;
 }
 
 .title_content {
@@ -483,3 +481,11 @@ li {
   z-index: 5;
 }
 
+
+em{
+  /* text-decoration: solid underline purple 4px; */
+  text-decoration: wavy underline #0274F7 1.5px!important;
+  text-underline-offset: 0.05rem;
+  font-style: normal;
+  text-decoration-thickness: 0.1%;
+}
