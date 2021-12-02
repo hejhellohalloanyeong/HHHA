@@ -2,13 +2,15 @@
 @font-face {
   font-family: Lausanne;
   src: url("../font/TWKLausanne/TWKLausanne-350.ttf") format("truetype-variations");
-  }
-  @font-face {
+}
+
+@font-face {
   font-family: Neutronic;
   src: url("../font/Neutronic/NeutronicHangeul-Regularv0.3.woff2");
-  }
+}
 
-html, body {
+html,
+body {
   z-index: 1;
   /* font-size: 16px; */
   font-size: 10vh;
@@ -20,163 +22,79 @@ html, body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-body{
+body {
   margin: 0 auto;
   height: 100%;
   width: 100%;
-  cursor: url("cursor2.png"), pointer;
-}
-
-a, button, input, label {
   cursor: pointer;
 }
 
-a{
+a,
+button,
+input,
+label {
+  cursor: pointer;
+}
+
+a {
   text-decoration-line: none;
   color: black;
 }
 
-*, *:after, *:before {
+*,
+*:after,
+*:before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-ul, li {
+ul,
+li {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-  .grow {
-      padding: 0 0px;
-      height: 100vh;
-      box-sizing: border-box;
-      display: flex;
-  }
-
-  .grow .item {
-      box-sizing: border-box;
-      flex-grow: 2;
-      transition: width 0.6s ease;
-      width: 0%;
-      box-shadow: 0 0 15px black;
-      position: relative;
-      overflow: hidden;
-      color: white;
-  }
-
-  .grow .item:hover {
-    transform: rotate(-4deg);
-    width: 5%;
-    position: relative;
-    transform-origin: 15% 1%;
-  }
-
-  .grow .item .text {
-      position: absolute;
-      font-size: 4vw;
-      /* font-weight: 800; */
-      font-family: "Lausanne";
-      line-height: 120%;
-      letter-spacing: -1px;
-      color: #000;
-      top: 0%;
-      margin-left: auto;
-      margin-right: auto;
-      left: 0;
-      right: 0;
-      width: 100%;
-      text-align: left;
-      transition-property: opacity, bottom;
-      transition-duration: 0.1s;
-      transition-delay: 0;
-      transition-timing-function: linear, ease;
-      box-shadow: 0 0 20px rgb(0, 0, 0);
-  }
-
-  .grow .text:hover {
-      opacity: 1;
-      /* hyphens: auto; */
-      font-size: 6.7vw;
-      transition-duration: 0.3s, 0.7s;
-      transition-delay: 0.4s, 0.2s;
-  }
-
-    .grow .item:before {
-      content: "";
-      position: absolute;
-      top: 0px;
-      right: 0px;
-      bottom: 0px;
-      left: 0px;
-      background-color: currentColor;
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: 5% 5%;
-  }
-
-  #test{
-      overflow-y: scroll;
-  }
-
-  .item_title{
-      box-shadow: 1px 0px 10px 0px rgb(61, 61, 61);
-      /* width: 300px; */
-      font-size: 10vh;
-      height: 80%;
-      padding: 10px 0px;
-      background-color: gray;
-      border-top-right-radius: 20px;
-      border-bottom-right-radius: 20px;
-      writing-mode: vertical-rl
-  }
-
-#HHHA_text{
-      padding: 0%;
-      margin: 0;
-  }
-
-#about_text{
-    font-family: 'Lausanne';
-    font-size: 1.6vw;
-    letter-spacing: 0px;
-    line-height: 135%;
-    padding-left: 3%;
-    padding-right: 3%;
+.grow {
+  padding: 0 0px;
+  height: 100vh;
+  box-sizing: border-box;
+  display: flex;
 }
 
-#textbox_HHHA{
-      background-color: white;
-      height: 100%;
-  }
-
-.container{
-  margin-top: 2vh;
-  margin-left: 2vh;
-  margin-right: 2vh;
-  grid-template-columns: 1fr 1fr;
-  display: grid;
+.grow .item {
+  box-sizing: border-box;
+  flex-grow: 2;
+  transition: width 0.6s ease;
+  width: 0%;
+  box-shadow: 1px 0px 10px 0px rgb(61, 61, 61);
+  position: relative;
+  overflow: hidden;
+  color: white;
+  
 }
 
-.desImage{
-  margin-right: 2vh;
+.grow .item:hover {
+  /* transform: rotate(-1deg); */
+  width: 5%;
+  position: relative;
+  /* transform-origin: 15% 1%; */
 }
 
-.desText{
-  font-size: 1.3vw;
-  color:rgb(0, 0, 0);
-}
+.item_open {
 
-.item_60{
-  color: rgb(255, 0, 0);
   transition-duration: 0.3s, 0.7s;
   transition-delay: 0.4s, 0.2s;
-  box-shadow: 0 0 20px black;
-  width: 60%;
+  box-shadow: 1px 0px 10px 0px rgb(61, 61, 61);
+  width: 50%;
+  height: 100vh;
+  overflow: scroll;
 }
 
-.grow .item_60 .text {
+.grow .item .text {
+  /* 타이틀 */
+  position: absolute;
   font-size: 4vw;
   /* font-weight: 800; */
   font-family: "Lausanne";
@@ -194,5 +112,281 @@ ul, li {
   transition-duration: 0.1s;
   transition-delay: 0;
   transition-timing-function: linear, ease;
-  box-shadow: 0 0 20px rgb(0, 0, 0);
+  box-shadow: 1px 0px 10px 0px rgb(61, 61, 61);
 }
+
+.grow .item_open .text {
+  
+  font-size: 4vw;
+  /* font-weight: 800; */
+  font-family: "Lausanne";
+  line-height: 120%;
+  letter-spacing: -1px;
+  color: #000;
+  top: 0%;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  width: 100%;
+  text-align: left;
+  transition-property: opacity, bottom;
+  transition-duration: 0.1s;
+  transition-delay: 0;
+  transition-timing-function: linear, ease;
+  box-shadow: 1px 0px 10px 0px rgb(61, 61, 61);
+}
+
+.grow .text:hover {
+  
+  opacity: 1;
+  /* hyphens: auto; */
+  font-size: 6.7vw;
+  transition-duration: 0.3s, 0.7s;
+  transition-delay: 0.4s, 0.2s;
+}
+
+.grow .item:before {
+  
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: currentColor;
+  /* background-image: url("image.png"); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 5% 5%;
+}
+
+#main {
+  
+  background-color: white;
+
+}
+
+.title_content {
+  
+  overflow-y: scroll;
+  grid-template-columns: 1fr 1fr;
+  display: grid;
+  color: #000;
+}
+
+.grow .item .title_content {
+
+  position: absolute;
+  font-size: 4vw;
+  font-family: "Lausanne";
+  line-height: 120%;
+  letter-spacing: -1px;
+  color: #000;
+  top: 0%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  transition-property: opacity, bottom;
+  transition-duration: 0.1s;
+  transition-delay: 0;
+  transition-timing-function: linear, ease;
+  box-shadow: 1px 0px 10px 0px rgb(61, 61, 61);
+}
+
+
+.item_title {
+  
+  box-shadow: 1px 0px 10px 0px rgb(61, 61, 61);
+  /* width: 300px; */
+  font-size: 10vh;
+  height: 40%;
+  padding: 10px 0px;
+  /* background-color: gray; */
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  writing-mode: vertical-rl;
+}
+
+#HHHA_text {
+  
+  padding: 0%;
+  margin: 0;
+}
+
+#about_text {
+
+  color: black;
+  /* background-color: #FFE447; */
+  font-family: 'Neutronic';
+  font-size: 1.4vw;
+  margin-top: 3%;
+  margin-right: 3%;
+  margin-left: 3%;
+  /* letter-spacing: 0px;
+  margin-left: 30px;
+  width: 650px; */
+  line-height: 145%;
+  /* padding-left: 3%;
+    padding-right: 3%; */
+}
+
+/* 아래부터 나리 */
+
+.grow .item .content {
+
+  position: absolute;
+  font-size: 4vw;
+  /* font-weight: 800; */
+  font-family: "Lausanne";
+  line-height: 120%;
+  letter-spacing: -1px;
+  color: #000;
+  top: 0%;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  width: 100%;
+  text-align: left;
+  transition-property: opacity, bottom;
+  transition-duration: 0.1s;
+  transition-delay: 0;
+  transition-timing-function: linear, ease;
+  /* box-shadow: 0 0 20px rgb(0, 0, 0); */
+}
+
+
+.grow .item .content:hover {
+
+  opacity: 1;
+  /* hyphens: auto; */
+  font-size: 6.7vw;
+  transition-duration: 0.3s, 0.7s;
+  transition-delay: 0.4s, 0.2s;
+}
+
+.grow .item_open .content{
+
+  font-size: 4vw;
+  /* font-weight: 800; */
+  font-family: "Lausanne";
+  line-height: 120%;
+  letter-spacing: -1px;
+  color: #000;
+  top: 0%;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  width: 100%;
+  text-align: left;
+  transition-property: opacity, bottom;
+  transition-duration: 0.1s;
+  transition-delay: 0;
+  transition-timing-function: linear, ease;
+  /* box-shadow: 0 0 20px rgb(0, 0, 0); */
+}
+
+.desText, .Text, .Name{
+
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 1.1vw;
+  /* font-weight: 800; */
+  font-family: "Neutronic";
+  line-height: 120%;
+}
+
+.desContainer {
+
+  position: relative;
+  background-color: white;
+  z-index: 99;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  margin-top: -1%;
+  margin-bottom: 3%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  padding-left: 2%;
+  box-shadow: 1px 0px 10px 0px rgb(61, 61, 61);
+}
+
+.Text{
+
+  margin-left: 3%;
+}
+
+.Name{
+
+  margin-left: 20%;
+}
+
+.word{
+
+  margin-left: 2%;
+}
+
+
+/* A - Z */
+#audience, #birthday{
+
+  position: relative;
+  z-index: 999;
+  background-color: white;
+  box-shadow: 1px 0px 10px 0px rgb(61, 61, 61);
+}
+
+#audience_container, #birthday_container{
+  position: relative;
+  z-index: 999;
+  background-color: white;
+  box-shadow: 1px 0px 10px 0px rgb(61, 61, 61);
+}
+
+#A_Naree, #A_Dahyun_1, #A_Dahyun_2, #A_ete, #A_sungeun, #A_jieun, #B_ete, #B_Naree{
+
+  display: grid;
+  grid-template-columns: 2fr 1.3fr 0.7fr;
+  display: grid;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  margin-top: -3%;
+  margin-bottom: 3%;
+  padding-top: 3%;
+  background-color: white;
+  box-shadow: 1px 0px 10px 0px rgb(61, 61, 61);
+  position: relative;
+}
+
+#A_Naree, #B_ete{
+
+  z-index: 10;
+}
+
+#A_Dahyun_1, #B_Naree{
+
+  z-index: 9;
+}
+
+#A_Dahyun_2{
+
+  z-index: 8;
+}
+
+#A_ete{
+
+  z-index: 7;
+}
+
+#A_sungeun{
+  z-index: 6;
+}
+
+#A_jieun{
+  z-index: 5;
+}
+
