@@ -12,6 +12,7 @@
 
 html,
 body {
+  
   background-color: white;
   z-index: 1;
   /* font-size: 16px; */
@@ -22,6 +23,11 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background-color: #0274F7;
+  color: white;
 }
 
 body {
@@ -202,6 +208,13 @@ li {
 
 
 .item_title {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+     -moz-user-select: none; /* Old versions of Firefox */
+      -ms-user-select: none; /* Internet Explorer/Edge */
+          user-select: none;
+
   box-shadow: 1px 0px 10px 0px rgb(61, 61, 61);
   /* width: 7vw; */
   font-size: 9vh;
