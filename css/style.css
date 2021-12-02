@@ -203,11 +203,13 @@ li {
   border-bottom-right-radius: 20px;
   writing-mode: vertical-rl;
   transition: width 10s;
+  transition-duration: 0.3s, 0.7s;
+  transition-delay: 0.4s, 0.2s;
 }
 
 .item_title:hover {
   box-shadow: 1px 0px 10px 0px rgb(61, 61, 61);
-  width: 130px;
+  width: 110px;
   font-size: 10vh;
   padding: 10px 0px;
   /* background-color: gray; */
