@@ -168,7 +168,6 @@ li {
 }
 
 .title_content {
-  
   overflow-y: scroll;
   grid-template-columns: 1fr 1fr;
   display: grid;
@@ -176,7 +175,6 @@ li {
 }
 
 .grow .item .title_content {
-
   position: absolute;
   font-size: 4vw;
   font-family: "Lausanne";
@@ -196,9 +194,20 @@ li {
 
 
 .item_title {
-  
   box-shadow: 1px 0px 10px 0px rgb(61, 61, 61);
   /* width: 300px; */
+  font-size: 10vh;
+  padding: 10px 0px;
+  /* background-color: gray; */
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  writing-mode: vertical-rl;
+  transition: width 6s ease;
+}
+
+.item_title:hover {
+  box-shadow: 1px 0px 10px 0px rgb(61, 61, 61);
+  width: 110px;
   font-size: 10vh;
   padding: 10px 0px;
   /* background-color: gray; */
