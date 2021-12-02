@@ -628,26 +628,31 @@
 
 
 <!-- Contact -->
-        <div class="item item_open" id="contact" style="color:white;">
-            <div class="title_content" style="width:50vw;">
-                
-            <!-- modify this form HTML and place wherever you want your form -->
-            <div class="contact_form">
-                <form action="https://formspree.io/f/xbjwrbld" method="POST">
-                    <label>
-                        Your email:
-                        <input type="email" name="_replyto"></label>
-                        <label>
-                            Your message:
-                            <textarea name="message"></textarea>
-                        </label>
-                        <!-- your other form fields go here -->
-                        <button type="submit">Send</button>
-                </form>
-            </div>
-            </div>
+<div class="item item_open" id="contact" style="color:white;">
+    <div class="title_content" style="width: 50vw">
+        
+    <!-- modify this form HTML and place wherever you want your form -->
+    <div class="contact_content">
 
-        </div>
+    </div>
+
+    <div class="contact_form">
+        <form action="https://formspree.io/f/xbjwrbld" method="POST">
+                <p id="emailLabel">
+                        Your email
+                        <input type="email" name="_replyto" id="emailInput">
+                </p>
+                <p id="messageLabel">
+                    Drop us a line!
+                    <textarea name="message" id="messageInput"></textarea>
+                </p>
+                <!-- your other form fields go here -->
+                <button type="submit" id="sendButton">Send</button>
+        </form>
+    </div>
+    </div>
+
+</div>
         <div id="item_title_contact" class="item_title" style="background-color:#FFE749; height: 42%">
             <div>Contact</div>
         </div>
