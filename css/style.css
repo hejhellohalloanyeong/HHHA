@@ -202,9 +202,7 @@ li {
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   writing-mode: vertical-rl;
-  transition: width 10s;
-  transition-duration: 0.3s, 0.7s;
-  transition-delay: 0.4s, 0.2s;
+  transition: width 6s ease;
 }
 
 .item_title:hover {
