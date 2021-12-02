@@ -238,7 +238,7 @@ li {
 /* 아래부터 나리 */
 
 .grow .item .content {
-
+ 
   position: absolute;
   font-size: 4vw;
   /* font-weight: 800; */
@@ -281,7 +281,7 @@ li {
   margin-right: auto;
   left: 0;
   right: 0;
-  width: 100%;
+  /* width: 100%; */
   text-align: left;
   transition-property: opacity, bottom;
   transition-duration: 0.1s;
@@ -289,6 +289,7 @@ li {
   transition-timing-function: linear, ease;
   /* box-shadow: 0 0 20px rgb(0, 0, 0); */
 }
+
 
 .desText, .Text, .Name{
 
@@ -327,8 +328,7 @@ li {
 }
 
 .word{
-
-  margin-left: 2%;
+  margin-left: 4px;
 }
 
 
