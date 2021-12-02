@@ -1,6 +1,8 @@
 // Title
 
-$('#main').on('click', function (e) {
+
+
+$('#main, #item_title_hhha').on('click', function (e) {
 
   if ($('#main').hasClass('item')) {
     $('#main').removeClass('item').addClass('item_open');
@@ -10,7 +12,7 @@ $('#main').on('click', function (e) {
   }
 });
 
-$('#about').on('click', function (e) {
+$('#about, #item_title_about').on('click', function (e) {
 
   if ($('#about').hasClass('item')) {
     $('#about').removeClass('item').addClass('item_open');
@@ -20,7 +22,7 @@ $('#about').on('click', function (e) {
   }
 });
 
-$('#alphabet').on('click', function (e) {
+$('#alphabet, #item_title_alphabet').on('click', function (e) {
 
   if ($('#alphabet').hasClass('item')) {
     $('#alphabet').removeClass('item').addClass('item_open');
@@ -30,7 +32,7 @@ $('#alphabet').on('click', function (e) {
   }
 });
 
-$('#contact').on('click', function (e) {
+$('#contact, #item_title_contact').on('click', function (e) {
 
   if ($('#contact').hasClass('item')) {
     $('#contact').removeClass('item').addClass('item_open');
@@ -100,97 +102,6 @@ $('#fool').on('click', function(e){
         $('#main, #about, #alphabet, #contact, #audience, #birthday, #coincidence, #divorce, #enlarge, #herb, #meeting, #organize, #part, #reservoir, #sector, #tick, #utilize, #width').addClass('item');
     } else if ($('#fool').hasClass('item_open')) {
       $('#fool').removeClass('item_open').addClass('item');
-    } 
-    });
-
-// //
-$('#herb').on('click', function(e){
-  
-    if ($('#herb').hasClass('item')) {
-        $('#herb').removeClass('item').addClass('item_open');
-        $('#main, #about, #alphabet, #contact, #audience, #birthday, #coincidence, #divorce, #enlarge, #fool, #meeting, #organize, #part, #reservoir, #sector, #tick, #utilize, #width').addClass('item');
-    } else if ($('#herb').hasClass('item_open')) {
-      $('#herb').removeClass('item_open').addClass('item');
-    } 
-    });
-
-$('#meeting').on('click', function(e){
-  
-    if ($('#meeting').hasClass('item')) {
-        $('#meeting').removeClass('item').addClass('item_open');
-        $('#main, #about, #alphabet, #contact, #audience, #birthday, #coincidence, #divorce, #enlarge, #fool, #herb, #organize, #part, #reservoir, #sector, #tick, #utilize, #width').addClass('item');
-    } else if ($('#meeting').hasClass('item_open')) {
-      $('#meeting').removeClass('item_open').addClass('item');
-    } 
-    });
-
-$('#organize').on('click', function(e){
-  
-    if ($('#organize').hasClass('item')) {
-        $('#organize').removeClass('item').addClass('item_open');
-        $('#main, #about, #alphabet, #contact, #audience, #birthday, #coincidence, #divorce, #enlarge, #fool, #herb, #meeting, #part, #reservoir, #sector, #tick, #utilize, #width').addClass('item');
-    } else if ($('#organize').hasClass('item_open')) {
-      $('#organize').removeClass('item_open').addClass('item');
-    } 
-    });
-
-$('#part').on('click', function(e){
-  
-    if ($('#part').hasClass('item')) {
-        $('#part').removeClass('item').addClass('item_open');
-        $('#main, #about, #alphabet, #contact, #audience, #birthday, #coincidence, #divorce, #enlarge, #fool, #herb, #meeting, #organize, #reservoir, #sector, #tick, #utilize, #width').addClass('item');
-    } else if ($('#part').hasClass('item_open')) {
-      $('#part').removeClass('item_open').addClass('item');
-    } 
-    });
-
-$('#reservoir').on('click', function(e){
-  
-    if ($('#reservoir').hasClass('item')) {
-        $('#reservoir').removeClass('item').addClass('item_open');
-        $('#main, #about, #alphabet, #contact, #audience, #birthday, #coincidence, #divorce, #enlarge, #fool, #herb, #meeting, #organize, #part, #sector, #tick, #utilize, #width').addClass('item');
-    } else if ($('#reservoir').hasClass('item_open')) {
-      $('#reservoir').removeClass('item_open').addClass('item');
-    } 
-    });
-
-$('#sector').on('click', function(e){
-  
-    if ($('#sector').hasClass('item')) {
-        $('#sector').removeClass('item').addClass('item_open');
-        $('#main, #about, #alphabet, #contact, #audience, #birthday, #coincidence, #divorce, #enlarge, #fool, #herb, #meeting, #organize, #part, #reservoir, #tick, #utilize, #width').addClass('item');
-    } else if ($('#sector').hasClass('item_open')) {
-      $('#sector').removeClass('item_open').addClass('item');
-    } 
-    });
-
-$('#tick').on('click', function(e){
-  
-    if ($('#tick').hasClass('item')) {
-        $('#tick').removeClass('item').addClass('item_open');
-        $('#main, #about, #alphabet, #contact, #audience, #birthday, #coincidence, #divorce, #enlarge, #fool, #herb, #meeting, #organize, #part, #reservoir, #sector, #utilize, #width').addClass('item');
-    } else if ($('#tick').hasClass('item_open')) {
-      $('#tick').removeClass('item_open').addClass('item');
-    } 
-    });
-
-$('#utilize').on('click', function(e){
-  
-    if ($('#utilize').hasClass('item')) {
-        $('#utilize').removeClass('item').addClass('item_open');
-        $('#main, #about, #alphabet, #contact, #audience, #birthday, #coincidence, #divorce, #enlarge, #fool, #herb, #meeting, #organize, #part, #reservoir, #sector, #tick, #width').addClass('item');
-    } else if ($('#utilize').hasClass('item_open')) {
-      $('#utilize').removeClass('item_open').addClass('item');
-    } 
-    });
-
-$('#width').on('click', function(e){
-  
-    if ($('#width').hasClass('item')) {
-        $('#width').removeClass('item').addClass('item_open');
-        $('#main, #about, #alphabet, #contact, #audience, #birthday, #coincidence, #divorce, #enlarge, #fool, #herb, #meeting, #organize, #part, #reservoir, #sector, #tick, #utilize').addClass('item');
-    } else if ($('#width').hasClass('item_open')) {
-      $('#width').removeClass('item_open').addClass('item');
     } 
     });
 
