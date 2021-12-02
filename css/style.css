@@ -332,7 +332,7 @@ li {
 
 
 /* A - Z */
-#audience, #birthday{
+#audience, #birthday, #coincidence, #divorce, #enlarge, #fool, #herb, #meeting, #organize, #part, #reservoir, #sector, #tick, #utilize, #width{
 
   position: relative;
   z-index: 999;
@@ -340,14 +340,16 @@ li {
   box-shadow: 1px 0px 10px 0px rgb(61, 61, 61);
 }
 
-#audience_container, #birthday_container{
+#audience_container, #birthday_container, #coincidence_container, 
+#divorce_container, #enlarge_container, #fool_container, #herb_container, #meeting_container, #organize_container, #part_container, #reservoir_container, #sector_container, #tick_container, #utilize_container, #width_container{
   position: relative;
   z-index: 999;
   background-color: white;
   box-shadow: 1px 0px 10px 0px rgb(61, 61, 61);
 }
 
-#A_Naree, #A_Dahyun_1, #A_Dahyun_2, #A_ete, #A_sungeun, #A_jieun, #B_ete, #B_Naree{
+#A_Naree, #A_Dahyun_1, #A_Dahyun_2, #A_ete, #A_sungeun, #A_jieun, 
+#B_ete, #B_Naree, #B_Dahyun, #B_Jieun{
 
   display: grid;
   grid-template-columns: 2fr 1.3fr 0.7fr;
@@ -372,12 +374,12 @@ li {
   z-index: 9;
 }
 
-#A_Dahyun_2{
+#A_Dahyun_2, #B_Dahyun{
 
   z-index: 8;
 }
 
-#A_ete{
+#A_ete, #B_Jieun{
 
   z-index: 7;
 }
