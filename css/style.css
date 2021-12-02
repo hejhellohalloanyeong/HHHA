@@ -57,6 +57,13 @@ li {
   padding: 0;
 }
 
+input, 
+textarea, 
+select { 
+  font-family:inherit; 
+}
+
+
 .grow {
   padding: 0 0px;
   height: 100vh;
@@ -233,6 +240,66 @@ li {
   line-height: 145%;
   /* padding-left: 3%;
     padding-right: 3%; */
+}
+
+
+.contact_form{
+  margin-top: 5%;
+  margin-left: 5%;
+  grid-template-columns: 1fr 1fr;
+  display: grid;
+  position: relative;
+  height: 100vh;
+}
+
+.grow .item_open .contact_form{
+  margin-top: 5%;
+  margin-left: 5%;
+  grid-template-columns: 1fr 1fr;
+  display: grid;
+}
+
+#emailLabel, #messageLabel{
+  font-size: 0.3rem;
+  margin-bottom: 3px;
+}
+
+#emailInput{
+  width: 22vw;
+  height: 5vh;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 1px 0px 10px 0px rgb(61, 61, 61);
+  padding: 5%;
+  font-size: 0.3rem;
+  margin: 2%;
+}
+
+#messageInput{
+  width: 22vw;
+  height: 40vh;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 1px 0px 10px 0px rgb(61, 61, 61);
+  padding: 3%;
+  font-size: 0.3rem;
+  margin: 2%;
+}
+
+#sendButton{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-size: 0.3rem;
+  font-family: 'Lausanne','Neutronic';
+  /* margin-top: -5%; */
+  position: absolute;
+  border-radius: 25px;
+  background-color: white;
+  box-shadow: 1px 0px 10px 0px rgb(61, 61, 61);
+  border: 0px solid black;
+  padding: 3%;
+  width: 8vw;
 }
 
 /* 아래부터 나리 */
