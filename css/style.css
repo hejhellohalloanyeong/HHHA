@@ -195,19 +195,18 @@ li {
 
 .item_title {
   box-shadow: 1px 0px 10px 0px rgb(61, 61, 61);
-  /* width: 300px; */
-  font-size: 10vh;
+  /* width: 7vw; */
+  font-size: 9vh;
   padding: 10px 0px;
   /* background-color: gray; */
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   writing-mode: vertical-rl;
-  transition: width 6s ease;
+  transition: font-size 0.2s ease;
 }
 
 .item_title:hover {
   box-shadow: 1px 0px 10px 0px rgb(61, 61, 61);
-  width: 110px;
   font-size: 10vh;
   padding: 10px 0px;
   /* background-color: gray; */
