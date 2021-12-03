@@ -1,6 +1,6 @@
 // Title
 
-$('#main, #item_title_hhha').on('click', function (e) {
+$('#item_title_hhha').on('click', function (e) {
 
   if ($('#main').hasClass('item')) {
     $('#main').removeClass('item').addClass('item_open');
@@ -10,7 +10,7 @@ $('#main, #item_title_hhha').on('click', function (e) {
   }
 });
 
-$('#about, #item_title_about').on('click', function (e) {
+$('#item_title_about').on('click', function (e) {
 
   if ($('#about').hasClass('item')) {
     $('#about').removeClass('item').addClass('item_open');
@@ -20,7 +20,7 @@ $('#about, #item_title_about').on('click', function (e) {
   }
 });
 
-$('#alphabet, #item_title_alphabet').on('click', function (e) {
+$('#item_title_alphabet').on('click', function (e) {
 
   if ($('#alphabet').hasClass('item')) {
     $('#alphabet').removeClass('item').addClass('item_open');
@@ -30,7 +30,7 @@ $('#alphabet, #item_title_alphabet').on('click', function (e) {
   }
 });
 
-$('#contact, #item_title_contact').on('click', function (e) {
+$('#item_title_contact').on('click', function (e) {
 
   if ($('#contact').hasClass('item')) {
     $('#contact').removeClass('item').addClass('item_open');

@@ -34,7 +34,6 @@ body {
   margin: 0 auto;
   height: 100%;
   width: 100%;
-  cursor: pointer;
 }
 
 a,
@@ -63,6 +62,15 @@ li {
   margin: 0;
   padding: 0;
 }
+
+em{
+  /* text-decoration: solid underline purple 4px; */
+  text-decoration: wavy underline #0274F7 1.5px!important;
+  text-underline-offset: 0.05rem;
+  font-style: normal;
+  text-decoration-thickness: 0.1%;
+}
+
 .footer{
   color:#EF3D47;
   z-index: 10000;
@@ -234,6 +242,13 @@ li {
   writing-mode: vertical-rl;
 }
 
+#item_title_hhha, 
+#item_title_alphabet,
+#item_title_about,
+#item_title_contact{
+  cursor: pointer;
+}
+
 #HHHA_text {
   
   padding: 0%;
@@ -338,6 +353,7 @@ li {
   transition-duration: 0.1s;
   transition-delay: 0;
   transition-timing-function: linear, ease;
+  cursor: pointer;
   /* box-shadow: 0 0 20px rgb(0, 0, 0); */
 }
 
@@ -370,6 +386,7 @@ li {
   transition-delay: 0;
   transition-timing-function: linear, ease;
   /* box-shadow: 0 0 20px rgb(0, 0, 0); */
+  cursor: pointer;
 }
 
 
@@ -437,8 +454,20 @@ li {
   box-shadow: 1px 0px 10px 0px rgb(61, 61, 61);
 }
 
-#A_Naree, #A_Dahyun_1, #A_Dahyun_2, #A_ete, #A_sungeun, #A_jieun, 
-#B_ete, #B_Naree, #B_Dahyun, #B_Jieun{
+#A_Naree, #A_Dahyun_1, #A_Dahyun_2, #A_ete, #A_Sungeun, #A_Jieun, 
+#B_ete, #B_Naree, #B_Dahyun, #B_Jieun,
+#C_ete, #C_Dahyun, #C_Naree_1, #C_Naree_2,
+#D_Chowon, #D_Jungsu, #D_Dahyun, #D_Eunju, #D_Gahyun, #D_Yunseo, #D_Sujin,
+#E_Dahyun, #E_Naree,
+#F_Dahyun, #F_ete, #F_Naree,
+#M_Eunju, #M_Yunseo, #M_Naree, #M_Chowon, #M_Jungsu, #M_Sujin,
+#O_Eunju, #O_Chowon, #O_Jungsu, #O_Yunseo, #O_Dahyun, #O_Sujin,
+#P_Plant, #P_Speaker,
+#R_ete, #R_Naree,
+#S_Dahyun_1, #S_Dahyun_2, #S_Dahyun_3, #S_Jieun,
+#T_Yunseo, #T_Naree,
+#U_Gahyun, #U_Yunseo, #U_Jungsu, #U_Dahyun, #U_Eunju, #U_Sujin,
+#W_Naree, #W_ete, #W_Dahyun{
 
   display: grid;
   grid-template-columns: 2fr 1.3fr 0.7fr;
@@ -453,39 +482,41 @@ li {
   position: relative;
 }
 
-#A_Naree, #B_ete{
+#A_Naree, #B_ete, #C_ete, #D_Chowon, #E_Dahyun, 
+#F_Dahyun, #M_Eunju, #O_Eunju, #P_Plant, #R_ete,
+#S_Dahyun_1, #T_Yunseo, #W_Naree, #U_Gahyun{
 
   z-index: 10;
 }
 
-#A_Dahyun_1, #B_Naree{
+#A_Dahyun_1, #B_Naree, #C_Dahyun, #D_Jungsu, #E_Naree, 
+#F_ete, #M_Yunseo, #O_Chowon, #P_Speaker, #R_Naree,
+#S_Dahyun_2, #T_Naree, #W_ete, #U_Yunseo{
 
   z-index: 9;
 }
 
-#A_Dahyun_2, #B_Dahyun{
+#A_Dahyun_2, #B_Dahyun, #C_Naree_1, #D_Dahyun, 
+#F_Naree, #M_Naree, #O_Jungsu, #S_Dahyun_3, 
+#W_Dahyun, #U_Jungsu{
 
   z-index: 8;
 }
 
-#A_ete, #B_Jieun{
+#A_ete, #B_Jieun, #C_Naree_2, #D_Eunju, #M_Chowon, 
+#O_Yunseo, #S_Jieun, #U_Dahyun{
 
   z-index: 7;
 }
 
-#A_sungeun{
+#A_Sungeun, #M_Jungsu, #D_Gahyun, #O_Dahyun, #U_Eunju{
   z-index: 6;
 }
 
-#A_jieun{
+#A_Jieun, #M_Sujin, #D_Yunseo, #O_Sujin, #U_Sujin{
   z-index: 5;
 }
 
-
-em{
-  /* text-decoration: solid underline purple 4px; */
-  text-decoration: wavy underline #0274F7 1.5px!important;
-  text-underline-offset: 0.05rem;
-  font-style: normal;
-  text-decoration-thickness: 0.1%;
+#D_Sujin{
+  z-index: 4;
 }
