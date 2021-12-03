@@ -18,7 +18,7 @@
 
 html,
 body {
-  
+
   background-color: white;
   z-index: 1;
   /* font-size: 16px; */
@@ -77,6 +77,27 @@ em{
   text-decoration-thickness: 0.1%;
 }
 
+.instagram{
+  text-decoration: solid underline rgb(26, 26, 26) 2px;
+  text-underline-offset: 0.05rem;
+}
+
+.instagram:hover{
+  text-decoration: solid underline rgb(26, 26, 26) 2px;
+  text-underline-offset: 0.05rem;
+  color: #0274F7;
+}
+
+.footer{
+  color:#EF3D47;
+  z-index: 10000;
+  font-size: 0.22rem;
+  position: fixed;
+  bottom: 0;
+  width: 99%;
+  height: 0.35rem;
+  text-align: right;
+}
 .grow {
   padding: 0 0px;
   height: 100vh;
@@ -93,7 +114,7 @@ em{
   position: relative;
   overflow: hidden;
   color: white;
-  
+
 }
 
 .grow .item:hover {
@@ -136,7 +157,7 @@ em{
 }
 
 .grow .item_open .text {
-  
+
   font-size: 4vw;
   /* font-weight: 800; */
   line-height: 120%;
@@ -157,7 +178,7 @@ em{
 }
 
 .grow .text:hover {
-  
+
   opacity: 1;
   /* hyphens: auto; */
   font-size: 6.7vw;
@@ -166,7 +187,7 @@ em{
 }
 
 .grow .item:before {
-  
+
   content: "";
   position: absolute;
   top: 0px;
@@ -238,7 +259,7 @@ em{
   writing-mode: vertical-rl;
 }
 
-#item_title_hhha, 
+#item_title_hhha,
 #item_title_alphabet,
 #item_title_about,
 #item_title_contact{
@@ -246,7 +267,7 @@ em{
 }
 
 #HHHA_text {
-  
+
   padding: 0%;
   margin: 0;
 }
@@ -331,7 +352,7 @@ em{
 /* 아래부터 나리 */
 
 .grow .item .content {
- 
+
   position: absolute;
   font-size: 4vw;
   /* font-weight: 800; */
@@ -452,7 +473,7 @@ em{
   box-shadow: 1px 0px 10px 0px rgb(61, 61, 61);
 }
 
-#audience_container, #birthday_container, #coincidence_container, 
+#audience_container, #birthday_container, #coincidence_container,
 #divorce_container, #enlarge_container, #fool_container, #herb_container, #meeting_container, #organize_container, #part_container, #reservoir_container, #sector_container, #tick_container, #utilize_container, #width_container{
   position: relative;
   z-index: 999;
@@ -460,7 +481,7 @@ em{
   box-shadow: 1px 0px 10px 0px rgb(61, 61, 61);
 }
 
-#A_Naree, #A_Dahyun_1, #A_Dahyun_2, #A_ete, #A_Sungeun, #A_Jieun, 
+#A_Naree, #A_Dahyun_1, #A_Dahyun_2, #A_ete, #A_Sungeun, #A_Jieun,
 #B_ete, #B_Naree, #B_Dahyun, #B_Jieun,
 #C_ete, #C_Dahyun, #C_Naree_1, #C_Naree_2,
 #D_Chowon, #D_Jungsu, #D_Dahyun, #D_Eunju, #D_Gahyun, #D_Yunseo, #D_Sujin,
@@ -488,28 +509,28 @@ em{
   position: relative;
 }
 
-#A_Naree, #B_ete, #C_ete, #D_Chowon, #E_Dahyun, 
+#A_Naree, #B_ete, #C_ete, #D_Chowon, #E_Dahyun,
 #F_Dahyun, #M_Eunju, #O_Eunju, #P_Plant, #R_ete,
 #S_Dahyun_1, #T_Yunseo, #W_Naree, #U_Gahyun{
 
   z-index: 10;
 }
 
-#A_Dahyun_1, #B_Naree, #C_Dahyun, #D_Jungsu, #E_Naree, 
+#A_Dahyun_1, #B_Naree, #C_Dahyun, #D_Jungsu, #E_Naree,
 #F_ete, #M_Yunseo, #O_Chowon, #P_Speaker, #R_Naree,
 #S_Dahyun_2, #T_Naree, #W_ete, #U_Yunseo{
 
   z-index: 9;
 }
 
-#A_Dahyun_2, #B_Dahyun, #C_Naree_1, #D_Dahyun, 
-#F_Naree, #M_Naree, #O_Jungsu, #S_Dahyun_3, 
+#A_Dahyun_2, #B_Dahyun, #C_Naree_1, #D_Dahyun,
+#F_Naree, #M_Naree, #O_Jungsu, #S_Dahyun_3,
 #W_Dahyun, #U_Jungsu{
 
   z-index: 8;
 }
 
-#A_ete, #B_Jieun, #C_Naree_2, #D_Eunju, #M_Chowon, 
+#A_ete, #B_Jieun, #C_Naree_2, #D_Eunju, #M_Chowon,
 #O_Yunseo, #S_Jieun, #U_Dahyun{
 
   z-index: 7;
