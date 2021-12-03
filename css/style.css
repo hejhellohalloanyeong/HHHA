@@ -71,6 +71,17 @@ em{
   text-decoration-thickness: 0.1%;
 }
 
+.instagram{
+  text-decoration: solid underline rgb(26, 26, 26) 2px;
+  text-underline-offset: 0.05rem;
+}
+
+.instagram:hover{
+  text-decoration: solid underline rgb(26, 26, 26) 2px;
+  text-underline-offset: 0.05rem;
+  color: #0274F7;
+}
+
 .footer{
   color:#EF3D47;
   z-index: 10000;
