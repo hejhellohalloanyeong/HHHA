@@ -69,20 +69,24 @@ li {
   padding: 0;
 }
 
-em{
-  /* text-decoration: solid underline purple 4px; */
+/* em{
+  text-decoration: solid underline purple 4px;
   text-decoration: wavy underline #0274F7 1.5px!important;
   text-underline-offset: 0.05rem;
   font-style: normal;
   text-decoration-thickness: 0.1%;
+} */
+
+.highlight {
+  background-color:#FFE749;
 }
 
-.instagram{
+.link{
   text-decoration: solid underline rgb(26, 26, 26) 2px;
   text-underline-offset: 0.05rem;
 }
 
-.instagram:hover{
+.link:hover{
   text-decoration: solid underline rgb(26, 26, 26) 2px;
   text-underline-offset: 0.05rem;
   color: #0274F7;
