@@ -10,6 +10,12 @@
   unicode-range:U+AC00-U+D7A3;
 }
 
+@media (min-width: 770px) {
+  #alert {
+    display: none;
+  }
+}
+
 html,
 body {
   
@@ -71,16 +77,6 @@ em{
   text-decoration-thickness: 0.1%;
 }
 
-.footer{
-  color:#EF3D47;
-  z-index: 10000;
-  font-size: 0.22rem;
-  position: fixed;
-  bottom: 0;
-  width: 99%;
-  height: 0.35rem;
-  text-align: right;
-}
 .grow {
   padding: 0 0px;
   height: 100vh;
@@ -435,6 +431,16 @@ em{
       -ms-user-select: none; /* Internet Explorer/Edge */
           user-select: none;
 }
+.footer{
+  color:#EF3D47;
+  z-index: 10000;
+  font-size: 0.22rem;
+  position: fixed;
+  bottom: 0;
+  width: 99%;
+  height: 0.35rem;
+  text-align: right;
+}
 
 
 /* A - Z */
@@ -519,4 +525,29 @@ em{
 
 #D_Sujin{
   z-index: 4;
+}
+
+@media (max-width: 770px) {
+
+  .grow {
+    display: none;
+  }
+  #container {
+    background-color: #FFE749;
+  }
+
+  #alert{
+    font-family: 'Lausanne','Neutronic';
+    font-size: 5vw;
+    text-align: center;
+    margin-top: 4.5rem;
+    /* color: #EF3D47; */
+    color: #0274F7;
+  }
+  a{
+    display: none;
+  }
+  .footer {
+    display: none;
+  }
 }
