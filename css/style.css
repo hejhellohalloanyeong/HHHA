@@ -217,7 +217,7 @@ li {
     "about_text about_text"
     "randomWord";
   display: grid;
-  color: #000;
+  color: #000; 
 }
 
 .grow .item .title_content {
