@@ -315,7 +315,7 @@ margin: 10%;
 }
 
 #emailLabel, #messageLabel{
-  font-size: 0.3rem;
+  font-size: 1.4vw;
   margin-bottom: 3px;
 }
 
@@ -326,7 +326,7 @@ margin: 10%;
   border-radius: 20px;
   box-shadow: 1px 0px 10px 0px rgb(61, 61, 61);
   padding: 5%;
-  font-size: 0.3rem;
+  font-size: 1.4vw;
   margin: 2%;
   /* background-color: #FFE749; */
 }
@@ -338,7 +338,7 @@ margin: 10%;
   border-radius: 20px;
   box-shadow: 1px 0px 10px 0px rgb(61, 61, 61);
   padding: 3%;
-  font-size: 0.3rem;
+  font-size: 1.4vw;
   margin: 2%;
   /* background-color: #FFE749; */
 }
@@ -347,7 +347,7 @@ margin: 10%;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  font-size: 0.3rem;
+  font-size: 1.4vw;
   font-family: 'Lausanne','Neutronic';
   /* margin-top: -5%; */
   position: absolute;
