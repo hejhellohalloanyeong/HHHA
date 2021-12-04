@@ -1,6 +1,6 @@
 // Title
 
-$('#item_title_hhha').on('click', function (e) {
+$('#item_title_hhha, #main').on('click', function (e) {
 
   if ($('#main').hasClass('item')) {
     $('#main').removeClass('item').addClass('item_open');
@@ -10,7 +10,7 @@ $('#item_title_hhha').on('click', function (e) {
   }
 });
 
-$('#item_title_about').on('click', function (e) {
+$('#item_title_about, #about').on('click', function (e) {
 
   if ($('#about').hasClass('item')) {
     $('#about').removeClass('item').addClass('item_open');
@@ -20,7 +20,7 @@ $('#item_title_about').on('click', function (e) {
   }
 });
 
-$('#item_title_alphabet').on('click', function (e) {
+$('#item_title_alphabet, #alphabet').on('click', function (e) {
 
   if ($('#alphabet').hasClass('item')) {
     $('#alphabet').removeClass('item').addClass('item_open');
@@ -30,7 +30,7 @@ $('#item_title_alphabet').on('click', function (e) {
   }
 });
 
-$('#item_title_contact').on('click', function (e) {
+$('#item_title_contact, #contact').on('click', function (e) {
 
   if ($('#contact').hasClass('item')) {
     $('#contact').removeClass('item').addClass('item_open');
@@ -38,6 +38,10 @@ $('#item_title_contact').on('click', function (e) {
   } else if ($('#contact').hasClass('item_open')) {
     $('#contact').removeClass('item_open').addClass('item');
   }
+});
+
+$("#emailInput, #messageInput, #sendButton, link").click(function(e) {
+  e.stopPropagation();
 });
 
 
