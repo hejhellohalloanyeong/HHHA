@@ -40,7 +40,7 @@ $('#item_title_contact, #contact').on('click', function (e) {
   }
 });
 
-$("#emailInput, #messageInput, #sendButton, link").click(function(e) {
+$("#emailInput, #messageInput, #sendButton, .link").click(function(e) {
   e.stopPropagation();
 });
 

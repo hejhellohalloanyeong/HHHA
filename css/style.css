@@ -213,12 +213,14 @@ li {
   overflow-y: scroll;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
-  grid-template-areas: 
-    "about_text about_text"
-    "randomWord";
   display: grid;
   color: #000; 
 }
+
+.wrm {
+margin: 10%;
+}
+
 
 .grow .item .title_content {
   position: absolute;
@@ -558,14 +560,9 @@ li {
 }
 
 @media (max-width: 770px) {
-
   .grow {
     display: none;
   }
-  #container {
-    background-color: #FFE749;
-  }
-
   #alert{
     font-family: 'Lausanne','Neutronic';
     font-size: 4vw;
