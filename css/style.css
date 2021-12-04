@@ -212,6 +212,10 @@ li {
 .title_content {
   overflow-y: scroll;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+    "about_text about_text"
+    "randomWord";
   display: grid;
   color: #000;
 }
@@ -293,8 +297,8 @@ li {
 }
 
 .contact_form{
-  margin-top: 5%;
-  margin-left: 5%;
+  margin-top: 0%;
+  margin-left: 0%;
   grid-template-columns: 1fr 1fr;
   display: grid;
   position: relative;
@@ -302,8 +306,8 @@ li {
 }
 
 .grow .item_open .contact_form{
-  margin-top: 5%;
-  margin-left: 5%;
+  margin-top: -2.5%;
+  margin-left: 3%;
   grid-template-columns: 1fr 1fr;
   display: grid;
 }
