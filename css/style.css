@@ -118,6 +118,7 @@ li {
   position: relative;
   overflow: hidden;
   color: white;
+  z-index: 9999;
 
 }
 
@@ -136,6 +137,7 @@ li {
   width: 50%;
   height: 100vh;
   overflow: scroll;
+  z-index: 9999;
 }
 
 .grow .item .text {
@@ -478,36 +480,20 @@ margin: 10%;
 
 /* A - Z */
 #audience, #birthday, #coincidence, #divorce, #enlarge, #fool, #herb, #meeting, #organize, #part, #reservoir, #sector, #tick, #utilize, #width{
-
   position: relative;
   z-index: 999;
   background-color: white;
   box-shadow: 1px 0px 10px 0px rgb(61, 61, 61);
 }
 
-#audience_container, #birthday_container, #coincidence_container,
-#divorce_container, #enlarge_container, #fool_container, #herb_container, #meeting_container, #organize_container, #part_container, #reservoir_container, #sector_container, #tick_container, #utilize_container, #width_container{
+.word_container{
   position: relative;
   z-index: 999;
   background-color: white;
   box-shadow: 1px 0px 10px 0px rgb(61, 61, 61);
 }
 
-#A_Naree, #A_Dahyun_1, #A_Dahyun_2, #A_ete, #A_Sungeun, #A_Jieun,
-#B_ete, #B_Naree, #B_Dahyun, #B_Jieun,
-#C_ete, #C_Dahyun, #C_Naree_1, #C_Naree_2,
-#D_Chowon, #D_Jungsu, #D_Dahyun, #D_Eunju, #D_Gahyun, #D_Yunseo, #D_Sujin,
-#E_Dahyun, #E_Naree,
-#F_Dahyun, #F_ete, #F_Naree,
-#M_Eunju, #M_Yunseo, #M_Naree, #M_Chowon, #M_Jungsu, #M_Sujin,
-#O_Eunju, #O_Chowon, #O_Jungsu, #O_Yunseo, #O_Dahyun, #O_Sujin,
-#P_Plant, #P_Speaker,
-#R_ete, #R_Naree,
-#S_Dahyun_1, #S_Dahyun_2, #S_Dahyun_3, #S_Jieun,
-#T_Yunseo, #T_Naree,
-#U_Gahyun, #U_Yunseo, #U_Jungsu, #U_Dahyun, #U_Eunju, #U_Sujin,
-#W_Naree, #W_ete, #W_Dahyun{
-
+.work_container{ 
   grid-template-columns: 2fr 1.3fr 0.7fr;
   display: grid;
   grid-column-gap: 0px;
@@ -516,48 +502,12 @@ margin: 10%;
   margin-bottom: 3%;
   padding-top: 3%;
   background-color: white;
-  box-shadow: 1px 0px 10px 0px rgb(61, 61, 61);
+  box-shadow: 0px 3px 7px rgb(120, 120, 120);
   position: relative;
 }
 
-#A_Naree, #B_ete, #C_ete, #D_Chowon, #E_Dahyun,
-#F_Dahyun, #M_Eunju, #O_Eunju, #P_Plant, #R_ete,
-#S_Dahyun_1, #T_Yunseo, #W_Naree, #U_Gahyun{
 
-  z-index: 10;
-}
 
-#A_Dahyun_1, #B_Naree, #C_Dahyun, #D_Jungsu, #E_Naree,
-#F_ete, #M_Yunseo, #O_Chowon, #P_Speaker, #R_Naree,
-#S_Dahyun_2, #T_Naree, #W_ete, #U_Yunseo{
-
-  z-index: 9;
-}
-
-#A_Dahyun_2, #B_Dahyun, #C_Naree_1, #D_Dahyun,
-#F_Naree, #M_Naree, #O_Jungsu, #S_Dahyun_3,
-#W_Dahyun, #U_Jungsu{
-
-  z-index: 8;
-}
-
-#A_ete, #B_Jieun, #C_Naree_2, #D_Eunju, #M_Chowon,
-#O_Yunseo, #S_Jieun, #U_Dahyun{
-
-  z-index: 7;
-}
-
-#A_Sungeun, #M_Jungsu, #D_Gahyun, #O_Dahyun, #U_Eunju{
-  z-index: 6;
-}
-
-#A_Jieun, #M_Sujin, #D_Yunseo, #O_Sujin, #U_Sujin{
-  z-index: 5;
-}
-
-#D_Sujin{
-  z-index: 4;
-}
 
 @media (max-width: 770px) {
   .grow {
@@ -578,3 +528,5 @@ margin: 10%;
     display: none;
   }
 }
+
+

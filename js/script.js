@@ -198,5 +198,25 @@ $('#width').on('click', function(e){
     } 
     });
 
+    $('#testX').on('click', function(e){
+  
+      if ($('#testX').hasClass('item')) {
+          $('#testX').removeClass('item').addClass('item_open');
+          $('#main, #about, #alphabet, #contact, #audience, #birthday, #coincidence, #divorce, #enlarge, #fool, #herb, #meeting, #organize, #part, #reservoir, #sector, #tick, #utilize, #testY').addClass('item');
+      } else if ($('#testX').hasClass('item_open')) {
+        $('#testX').removeClass('item_open').addClass('item');
+      } 
+      });
+
+      $('#testY').on('click', function(e){
+  
+        if ($('#testY').hasClass('item')) {
+            $('#testY').removeClass('item').addClass('item_open');
+            $('#main, #about, #alphabet, #contact, #audience, #birthday, #coincidence, #divorce, #enlarge, #fool, #herb, #meeting, #organize, #part, #reservoir, #sector, #tick, #utilize, #testX').addClass('item');
+        } else if ($('#testY').hasClass('item_open')) {
+          $('#testY').removeClass('item_open').addClass('item');
+        } 
+        });
+  
 
     // '#main, #about, #alphabet, #contact, #audience, #birthday, #coincidence, #divorce, #enlarge, #fool, #herb, #meeting, #organize, #part, #reservoir, #sector, #tick, #utilize, #width'
