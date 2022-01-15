@@ -1,0 +1,93 @@
+/* 스크롤바 */
+.area::-webkit-scrollbar {
+    width: 10px;
+  }
+  .area::-webkit-scrollbar-thumb {
+    background-color: #333;
+    border-radius: 0px;
+    background-clip: padding-box;
+    border: 2px solid transparent;
+  }
+  .area::-webkit-scrollbar-track {
+    background-color: #bebebe;
+    border-radius: 0px;
+    
+  }
+
+/* PC - add/modify styles */
+/** 좌측탭관련 **/
+.itemtit_wrap{overflow: hidden;}
+.itemtit_wrap .item_title{display: block;font-size: ; height: auto;padding:10px;border-radius: 20px 0 0 20px;width:100%;}             
+.itemtit_wrap .item_title.hhha{background-color: #a0f062;z-index: 4;position: relative;}
+.itemtit_wrap .item_title.alpha{background-color: #62bef0;z-index: 3;position: relative;margin-top:-25vh;}
+.itemtit_wrap .item_title.alpha:hover{margin-top: -15vh;}            
+.itemtit_wrap .item_title.about{background-color: #7562f0;z-index: 2;position: relative;margin-top:-10vh;}
+.itemtit_wrap .item_title.contact{background-color: #f6e366;z-index: 1;position: relative;margin-top:-13vh;}
+
+.itemtit_wrap .item_title:hover{z-index: 10!important;transition: 0.5s ease;}             
+
+/** 클릭 시 **/
+.itemtit_wrap .item_title.on{z-index: 9!important;transition: 0.5s ease;}
+.itemtit_wrap .item_title.alpha.on{margin-top: -15vh;}
+.itemtit_wrap .item_title > div{    transform: rotate(180deg);    width: 100%;    text-align: right;}
+
+#main{box-shadow: none;}
+
+.topitem_box{position: relative;flex-grow: 0;overflow: hidden;width:0;transition: 0.3s ease-in;}
+.topitem_box.show{width:100%;transition: 0.3s ease-in;}
+.topitem_box .topitem{overflow: hidden;min-height: 100vh;position: absolute;top:0;left: 0;;transition: 0.3s ease-in;}
+
+#hhha_txt{background-color:#a0f062 ;z-index: 1;}
+#alphabet_txt{background-color: #62bef0;z-index: 0;}
+#about_txt{background-color: #7562f0;z-index: 0;}
+#contact_txt{background-color:#f6e366 ;z-index: 0;}
+
+.topitem_box .topitem.on{width:100%;z-index: 9!important;}
+.topitem_box .topitem .title_content{overflow: hidden;width:100%;}
+
+/** 컨텐츠 수정관련 **/
+.item_open{overflow-x: hidden;}
+
+/* Mobile */
+
+@media (max-width: 770px) {
+
+    .grow {
+        height:auto;
+        overflow: auto;
+        flex-direction: column;
+    }
+    #alert{
+      display: none;
+      font-family: 'Lausanne','Neutronic';
+      font-size: 4vw;
+      text-align: center;
+      margin-top: 4rem;
+      /* color: #EF3D47; */
+      color: #0274F7;
+    }
+    
+    .itemtit_wrap{display: flex;}
+    .itemtit_wrap .item_title{display: inline-block;width:auto;writing-mode: unset;font-size: 5vw;margin-top: 0!important;border-radius:20px 20px 0 0;flex-grow: 1;}
+    .itemtit_wrap .item_title > div{transform: none;text-align: left;}
+
+    .grow .item{width: 100%;height: 10vw;flex-grow: 0;transition: 0.2s ease;}
+    .grow .item .content{width:100%!important;}
+    .grow .item:hover{width:100%;}
+    .item_open{width:100%;height: 370px;;overflow: hidden;}
+    .grow .item .content{font-size: 10vw;}
+    .grow .item_open .content{width:100%!important;font-size: 10vw;position: relative;}
+    .grow .item .content:hover{font-size: 10vw;}
+
+    .grow .item_open .content .word_container{width:100%;}
+    .grow .item_open .content .desContainer{}
+    .work_wrap{overflow: auto;height:274px}
+
+    .contact_form{display: block;}
+    .topitem_box{width:100%;height:0px;}
+    .topitem_box.show{height:100vh}
+
+    #emailInput{display: block;width:85%;box-sizing: border-box;}
+    #messageInput{display: block;width:85%;box-sizing: border-box;resize: none;}
+    #sendButton{width:85%;box-sizing: border-box;height:10vw;margin-top:2vw}
+}
