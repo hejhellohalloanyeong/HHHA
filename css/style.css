@@ -379,7 +379,7 @@
     cursor: pointer;
     /* box-shadow: 0 0 20px rgb(0, 0, 0); */
   }
-  
+
   .grow .item .content:hover {
   
     opacity: 1;
@@ -453,7 +453,7 @@
             user-select: none;
   }
   .footer{
-    color:#EF3D47;
+    color:black;
     z-index: 10000;
     font-size: 0.22rem;
     position: fixed;
@@ -490,6 +490,87 @@
     background-color: white;
     box-shadow: 0px 3px 7px rgb(120, 120, 120);
     position: relative;
+  }
+
+  .book_shadow{
+    position: absolute;
+    background-color: transparent;
+    width: 1vw;
+    height: 100vh;
+    z-index: 999;
+    box-shadow: -1px 0px 10px 0px rgb(163, 163, 163);
+  }
+  .book_shadow_2{
+    position: absolute;
+    background-color: transparent;
+    width: 1vw;
+    height: 100vh;
+    z-index: 999;
+    margin-left: 1vw;
+    box-shadow: -1px 0px 10px 0px rgb(163, 163, 163);
+  }
+  .book_shadow_3{
+    position: absolute;
+    background-color: transparent;
+    width: 1vw;
+    height: 100vh;
+    z-index: 999;
+    margin-left: 2vw;
+    box-shadow: -1px 0px 10px 0px rgb(163, 163, 163);
+  }
+  .book_shadow_4{
+    position: absolute;
+    background-color: transparent;
+    width: 1vw;
+    height: 100vh;
+    z-index: 999;
+    margin-left: 3vw;
+    box-shadow: -1px 0px 10px 0px rgb(163, 163, 163);
+  }
+  .book_shadow_5{
+    position: absolute;
+    background-color: transparent;
+    width: 1vw;
+    height: 100vh;
+    z-index: 999;
+    margin-left: 4vw;
+    box-shadow: -1px 0px 10px 0px rgb(163, 163, 163);
+  }
+  .book_shadow_6{
+    position: absolute;
+    background-color: transparent;
+    width: 1vw;
+    height: 100vh;
+    z-index: 999;
+    margin-left: 5vw;
+    box-shadow: -1px 0px 10px 0px rgb(163, 163, 163);
+  }
+  .book_shadow_7{
+    position: absolute;
+    background-color: transparent;
+    width: 1vw;
+    height: 100vh;
+    z-index: 999;
+    margin-left: 6vw;
+    box-shadow: -1px 0px 10px 0px rgb(163, 163, 163);
+  }
+  .book_shadow_8{
+    position: absolute;
+    background-color: transparent;
+    width: 1vw;
+    height: 100vh;
+    z-index: 999;
+    margin-left: 7vw;
+    box-shadow: -1px 0px 10px 0px rgb(163, 163, 163);
+    }
+  .book_shadow_9{
+    position: absolute;
+    background-color: transparent;
+    width: 1vw;
+    height: 100vh;
+    z-index: 999;
+    margin-left: 8vw;
+    box-shadow: -1px 0px 10px 0px rgb(163, 163, 163);
   }
   
   

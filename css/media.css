@@ -18,11 +18,11 @@
 /** 좌측탭관련 **/
 .itemtit_wrap{overflow: hidden;}
 .itemtit_wrap .item_title{display: block;font-size: ; height: auto;padding:10px;border-radius: 20px 0 0 20px;width:100%;}             
-.itemtit_wrap .item_title.hhha{background-color: #a0f062;z-index: 4;position: relative;}
-.itemtit_wrap .item_title.alpha{background-color: #62bef0;z-index: 3;position: relative;margin-top:-25vh;}
+.itemtit_wrap .item_title.hhha{background-color: #F846A0;z-index: 4;position: relative;}
+.itemtit_wrap .item_title.alpha{background-color: #F87422;z-index: 3;position: relative;margin-top:-25vh;}
 .itemtit_wrap .item_title.alpha:hover{margin-top: -15vh;}            
-.itemtit_wrap .item_title.about{background-color: #7562f0;z-index: 2;position: relative;margin-top:-10vh;}
-.itemtit_wrap .item_title.contact{background-color: #f6e366;z-index: 1;position: relative;margin-top:-13vh;}
+.itemtit_wrap .item_title.about{background-color: #F6DE16;z-index: 2;position: relative;margin-top:-10vh;}
+.itemtit_wrap .item_title.contact{background-color: #7AD841;z-index: 1;position: relative;margin-top:-13vh;}
 
 .itemtit_wrap .item_title:hover{z-index: 10!important;transition: 0.5s ease;}             
 
@@ -37,10 +37,10 @@
 .topitem_box.show{width:100%;transition: 0.3s ease-in;}
 .topitem_box .topitem{overflow: hidden;min-height: 100vh;position: absolute;top:0;left: 0;;transition: 0.3s ease-in;}
 
-#hhha_txt{background-color:#a0f062 ;z-index: 1;}
-#alphabet_txt{background-color: #62bef0;z-index: 0;}
-#about_txt{background-color: #7562f0;z-index: 0;}
-#contact_txt{background-color:#f6e366 ;z-index: 0;}
+#hhha_txt{background-color:#F846A0 ;z-index: 1;}
+#alphabet_txt{background-color: #F87422;z-index: 0;}
+#about_txt{background-color: #F6DE16;z-index: 0;}
+#contact_txt{background-color:#7AD841 ;z-index: 0;}
 
 .topitem_box .topitem.on{width:100%;z-index: 9!important;}
 .topitem_box .topitem .title_content{overflow: hidden;width:100%;}
@@ -86,6 +86,10 @@
     .contact_form{display: block;}
     .topitem_box{width:100%;height:0px;}
     .topitem_box.show{height:100vh}
+
+    .book_shadow, .book_shadow_2, .book_shadow_3, .book_shadow_4, .book_shadow_5, .book_shadow_6, .book_shadow_7, .book_shadow_8, .book_shadow_9{
+     display: none;
+    }
 
     #emailInput{display: block;width:85%;box-sizing: border-box;}
     #messageInput{display: block;width:85%;box-sizing: border-box;resize: none;}
