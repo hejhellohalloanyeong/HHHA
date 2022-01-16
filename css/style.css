@@ -489,6 +489,7 @@
 .language {
   margin-left: 0.6vh;
   margin-top: 0.5vh;
+  
 }
 
   
@@ -601,9 +602,6 @@
     margin-left: 8vw;
     box-shadow: -1px 0px 10px 0px rgb(163, 163, 163);
   }
-  
-  
-  
   
   @media (max-width: 770px) {
     
