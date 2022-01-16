@@ -86,8 +86,17 @@
     .title_content {
       grid-template-columns: 1fr;
     }
-    #about_text {
+    #about_text, #generatorLabel, #emailLabel, #messageLabel, #sendButton {
       font-size: 4vw;
+    }
+    #about_text_eng{
+      display: none;
+    }
+    #emailLabel, #messageLabel, #sendButton{
+      margin-left: 3%;
+    }
+    .desText, .Text, .Name{
+      font-size: 3vw;
     }
 
     .contact_form{display: block;}
