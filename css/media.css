@@ -111,6 +111,10 @@
       display: inline;
     }
 
+    #mobilenone {
+      display: none;
+    }
+
     .contact_form{display: block;}
     .topitem_box{width:100%;height:0px;}
     .topitem_box.show{height:100vh}
