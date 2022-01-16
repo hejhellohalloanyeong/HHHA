@@ -429,6 +429,10 @@
     line-height: 115%;
   }
   
+  .desText{
+    padding-right: 3%;
+  }
+
   .desContainer {
     position: relative;
     background-color: white;
