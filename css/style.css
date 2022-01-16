@@ -81,13 +81,13 @@
   }
   
   .link{
-    text-decoration: solid underline rgb(26, 26, 26) 2px;
-    text-underline-offset: 0.05rem;
+    text-decoration: solid underline rgb(26, 26, 26) 0.24vh;
+    text-underline-offset: 2.6px;
   }
   
   .link:hover{
-    text-decoration: solid underline rgb(26, 26, 26) 2px;
-    text-underline-offset: 0.05rem;
+    text-decoration: solid underline rgb(26, 26, 26) 0.24vh;
+    text-underline-offset: 2.6px;
     color: #0274F7;
   }
   
@@ -134,7 +134,7 @@
     position: absolute;
     font-size: 4vw;
     /* font-weight: 800; */
-    line-height: 120%;
+    line-height: 115%;
     letter-spacing: 0px;
     color: #000;
     top: 0%;
@@ -154,7 +154,7 @@
   .grow .item_open .text {
     font-size: 4vw;
     /* font-weight: 800; */
-    line-height: 120%;
+    line-height: 115%;
     letter-spacing: 0px;
     color: #000;
     top: 0%;
@@ -212,13 +212,13 @@
   .grow .item .title_content {
     position: absolute;
     font-size: 4vw;
-    line-height: 120%;
+    line-height: 115%;
     letter-spacing: 0px;
     color: #000;
     top: 0%;
     margin-left: auto;
     margin-right: auto;
-    text-align: left;
+    text-align: justify;
     transition-property: opacity, bottom;
     transition-duration: 0.1s;
     transition-delay: 0;
@@ -274,7 +274,7 @@
     margin-top: 3%;
     margin-right: 3%;
     margin-left: 3%;
-    line-height: 145%;
+    line-height: 140%;
   }
 
   #about_text_eng{
@@ -283,7 +283,7 @@
     margin-top: 3%;
     margin-right: 3%;
     margin-left: 3%;
-    line-height: 145%;
+    line-height: 140%;
   }
   
   .contact_form{
@@ -362,7 +362,7 @@
     position: absolute;
     font-size: 4vw;
     /* font-weight: 800; */
-    line-height: 120%;
+    line-height: 115%;
     letter-spacing: 0px;
     color: #000;
     top: 0%;
@@ -371,7 +371,7 @@
     left: 0;
     right: 0;
     width: 100%;
-    text-align: left;
+    text-align: justify;
     transition-property: opacity, bottom;
     transition-duration: 0.1s;
     transition-delay: 0;
@@ -392,7 +392,7 @@
   .grow .item_open .content{
     font-size: 4vw;
     /* font-weight: 800; */
-    line-height: 120%;
+    line-height: 115%;
     letter-spacing: 0px;
     color: #000;
     top: 0%;
@@ -402,6 +402,11 @@
     right: 0;
     /* width: 100%; */
     text-align: left;
+    text-justify: auto;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
     transition-property: opacity, bottom;
     transition-duration: 0.1s;
     transition-delay: 0;
@@ -413,9 +418,15 @@
   .desText, .Text, .Name{
     margin-top: 0;
     margin-bottom: 0;
-    font-size: 1.1vw;
+    font-size: 1.2vw;
+    text-align: left;
+    text-justify: auto;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
     /* font-weight: 800; */
-    line-height: 120%;
+    line-height: 115%;
   }
   
   .desContainer {
