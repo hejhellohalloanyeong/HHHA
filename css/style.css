@@ -91,16 +91,6 @@
     color: #0274F7;
   }
   
-  .footer{
-    color:#EF3D47;
-    z-index: 10000;
-    font-size: 0.22rem;
-    position: fixed;
-    bottom: 0;
-    width: 99%;
-    height: 0.35rem;
-    text-align: right;
-  }
   .grow {
     padding: 0 0px;
     height: 100vh;
@@ -452,16 +442,40 @@
         -ms-user-select: none; /* Internet Explorer/Edge */
             user-select: none;
   }
-  .footer{
+
+  .footer {
     color:black;
     z-index: 10000;
     font-size: 0.22rem;
     position: fixed;
     bottom: 0;
-    width: 99%;
-    height: 0.35rem;
+    width: 100%;
+    right: 0;
     text-align: right;
+    display: block;
+    float: right;
+    padding: 0.1rem;
   }
+
+  .copyright {
+    float: right;
+  }
+
+  .translate {
+    background-color: #00abc8;
+    width: 7%;
+    height: 15vh;
+    right: 0;
+    float: right;
+    border-radius: 20px 0 0 20px;
+    margin-bottom: 50px;
+    position: fixed;
+    z-index: 999999;
+    bottom: 0;
+    font-size: 0.6em;
+    padding: 1px;
+}
+
   
   
   /* A - Z */

@@ -17,7 +17,7 @@
 /* PC - add/modify styles */
 /** 좌측탭관련 **/
 .itemtit_wrap{overflow: hidden;}
-.itemtit_wrap .item_title{display: block;font-size: ; height: auto;padding:10px;border-radius: 20px 0 0 20px;width:100%;}             
+.itemtit_wrap .item_title{display: block; height: auto;padding:10px;border-radius: 20px 0 0 20px;width:100%;}             
 .itemtit_wrap .item_title.hhha{background-color: #F846A0;z-index: 4;position: relative;}
 .itemtit_wrap .item_title.alpha{background-color: #F87422;z-index: 3;position: relative;margin-top:-25vh;}
 .itemtit_wrap .item_title.alpha:hover{margin-top: -15vh;}            
