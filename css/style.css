@@ -108,7 +108,6 @@
     overflow: hidden;
     color: white;
     z-index: 9999;
-  
   }
   
   .grow .item:hover {
@@ -116,6 +115,7 @@
     width: 5%;
     position: relative;
     /* transform-origin: 15% 1%; */
+    
   }
   
   .item_open {
@@ -243,6 +243,7 @@
     border-bottom-right-radius: 20px;
     writing-mode: vertical-rl;
     transition: font-size 0.2s ease;
+    cursor: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='45' height='45' viewBox='0 0 21.61 22.77'%3E%3Cpath d='M16.57,16.15A9,9,0,1,0,15,17.46h0l6.25,6.25,1.42-1.42Zm-3-.14a7.07,7.07,0,1,1,1.56-1.28A7,7,0,0,1,13.59,16Z' transform='translate(-1.06 -0.94)'/%3E%3C/svg%3E"), pointer;
   }
   
   .item_title:hover {
