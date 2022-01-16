@@ -462,18 +462,24 @@
   }
 
   .translate {
-    background-color: #00abc8;
-    width: 7%;
-    height: 15vh;
+    background-color: #FF7400;
+    width: 7.5vh;
+    height: 9vh;
     right: 0;
     float: right;
     border-radius: 20px 0 0 20px;
-    margin-bottom: 50px;
+    margin-bottom: 5vh;
     position: fixed;
     z-index: 999999;
     bottom: 0;
     font-size: 0.6em;
     padding: 1px;
+    box-shadow: 1px 0px 10px 0px rgb(61, 61, 61);
+}
+
+.language {
+  margin-left: 0.6vh;
+  margin-top: 0.5vh;
 }
 
   
