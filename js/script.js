@@ -18,6 +18,7 @@ $(document).ready(function(){
 		$(".topitem_box").addClass('show');		
 		
 	});
+
 	$(".area").click(function(){
 		if($(this).hasClass("item_open"))
 		{	
