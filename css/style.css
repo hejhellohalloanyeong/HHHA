@@ -314,7 +314,7 @@
   }
   
   #emailInput{
-    width: 22vw;
+    width: 42vw;
     height: 5vh;
     border: none;
     border-radius: 20px;
@@ -326,7 +326,7 @@
   }
   
   #messageInput{
-    width: 22vw;
+    width: 42vw;
     height: 40vh;
     border: none;
     border-radius: 20px;
