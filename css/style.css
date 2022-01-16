@@ -269,17 +269,20 @@
   
   #about_text {
     color: black;
-    /* background-color: #FFE447; */
     font-size: 1.4vw;
     margin-top: 3%;
     margin-right: 3%;
     margin-left: 3%;
-    /* letter-spacing: 0px;
-    margin-left: 30px;
-    width: 650px; */
     line-height: 145%;
-    /* padding-left: 3%;
-      padding-right: 3%; */
+  }
+
+  #about_text_eng{
+    color: black;
+    font-size: 1.4vw;
+    margin-top: 3%;
+    margin-right: 3%;
+    margin-left: 3%;
+    line-height: 145%;
   }
   
   .contact_form{
@@ -298,6 +301,12 @@
     display: grid;
   }
   
+  #generatorLabel{
+  font-size: 1.4vw; 
+  margin-left: 3%; 
+  margin-top: 3%;
+  }
+
   #emailLabel, #messageLabel{
     font-size: 1.4vw;
     margin-bottom: 3px;
@@ -399,7 +408,6 @@
     /* box-shadow: 0 0 20px rgb(0, 0, 0); */
     cursor: pointer;
   }
-  
   
   .desText, .Text, .Name{
     margin-top: 0;
