@@ -96,7 +96,19 @@
       margin-left: 3%;
     }
     .desText, .Text, .Name{
-      font-size: 3vw;
+      font-size: 3.3vw;
+    }
+    .work_container{ 
+      grid-template-columns: 1fr;
+    }
+    .Text{
+      margin-left: 2%;
+      display: inline;
+    }
+    
+    .Name{
+      margin-left: 2%;
+      display: inline;
     }
 
     .contact_form{display: block;}
