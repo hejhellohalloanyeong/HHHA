@@ -469,7 +469,6 @@
 
   .footer {
     color:black;
-    z-index: 10000;
     font-size: 0.22rem;
     position: fixed;
     bottom: 0;

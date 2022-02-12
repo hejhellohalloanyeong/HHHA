@@ -17,7 +17,7 @@ $(document).ready(function () {
 		$(".topitem_box").addClass('show');
 
 	});
-	$(".back").click(function () {
+	$(".back").click(function(){
 		$(".topitem_box").removeClass('show');
 		$(".topitem").removeClass('on');
 
