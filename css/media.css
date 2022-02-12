@@ -1,3 +1,28 @@
+/* loading */
+.loader {
+  top:0;bottom:0;left:0;right:0;
+  background-color: rgba(255,255,255,0.95);
+  position: fixed;
+
+  z-index: 999;
+}
+.spinicon{border: 16px solid #f3f3f3;
+  border-top: 16px solid #ff7400;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;}
+
+@keyframes spin {
+  0% {transform:translate(-50%, -50%) rotate(0deg); }
+  100% {transform:translate(-50%, -50%) rotate(360deg); }
+}
+
 /* 스크롤바 */
 .area::-webkit-scrollbar {
     width: 10px;
@@ -13,7 +38,7 @@
     border-radius: 0px;
     
   }
-
+ 
 /* PC - add/modify styles */
 /** 좌측탭관련 **/
 .itemtit_wrap{overflow: hidden;}
@@ -33,7 +58,8 @@
 
 #main{box-shadow: none;}
 
-.topitem_box{position: relative;flex-grow: 0;overflow: hidden;width:0;transition: 0.3s ease-in;}
+.topitem_box{position: relative; flex-grow: 0;overflow: hidden;width:0;transition: 0.3s ease-in;}
+.topitem_box.hov{flex-grow: 13;}
 .topitem_box.show{width:100%;transition: 0.3s ease-in;}
 .topitem_box .topitem{overflow: hidden;min-height: 100vh;position: absolute;top:0;left: 0;;transition: 0.3s ease-in;}
 
@@ -74,15 +100,19 @@
     .grow .item{width: 100%;height: 10vw;flex-grow: 0;transition: 0.2s ease;}
     .grow .item .content{width:100%!important;}
     .grow .item:hover{width:100%;}
-    .item_open{width:100%;height: 370px;;overflow: hidden;}
+    .item_open{width:100%;height: 70vh;;overflow: hidden;}
     .grow .item .content{font-size: 10vw;}
     .grow .item_open .content{width:100%!important;font-size: 10vw;position: relative;}
     .grow .item .content:hover{font-size: 10vw;}
 
     .grow .item_open .content .word_container{width:100%;}
     .grow .item_open .content .desContainer{}
-    .work_wrap{overflow: auto;height:274px}
+    .work_wrap{overflow: auto;height:56vh}
     
+    .contact_form{display: block;}
+    .topitem_box{width:100%;height:0px;}
+    .topitem_box.show{height:100vh;position:relative}
+
     .title_content {
       grid-template-columns: 1fr;
     }
