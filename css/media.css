@@ -64,9 +64,9 @@
 #contact_txt{background-color:#75e440 ;z-index: ;left:0px;-webkit-transform: translateZ(0)}
 
 .topitem_box .topitem.on{width:48vw;z-index: 9!important;-webkit-transform: translateZ(0)}
-.topitem_box .topitem .title_content{overflow: scroll;width:100%;padding:0 0 0 1vw;transition: 0.2s ease-in-out;}
+.topitem_box .topitem .title_content{overflow: scroll; width:100%;padding:0 0 0 1vw;transition: 0.2s ease-in-out;}
 .topitem_box.hov .topitem .title_content{padding:0 0 0 1vw;transition: 0.2s ease-in-out;}
-.topitem_box .topitem.on .title_content{padding:0 0 0 1vw;transition: 0.2s ease-in-out;}
+.topitem_box .topitem.on .title_content{overflow-y: scroll; height: 100vh; padding:0 0 0 1vw;transition: 0.2s ease-in-out;}
 
 .contact_form{display:block;width:100%;padding:0 20px 0 0;}
 #emailInput{width:100%;box-sizing: border-box;}
