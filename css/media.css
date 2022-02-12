@@ -36,7 +36,7 @@
 .itemtit_wrap .item_title{display: block; height: auto;padding:10px;border-radius: 20px 0 0 20px;width:100%;}             
 .itemtit_wrap .item_title.hhha{background-color: #fd3fa1;z-index: 4;position: absolute;width: 115px;-webkit-transform: translateZ(0);}
 .itemtit_wrap .item_title.hhha:hover{width:;}
-.itemtit_wrap .item_title.alpha{background-color: #f7e432;z-index: 3;position: absolute;width: 105px;top:0vh;height:auto;overflow: hidden;}
+.itemtit_wrap .item_title.alpha{background-color: #f7e432;z-index: 3;position: absolute;width: 105px;top:0vh;height:auto;overflow: hiden;}
 .itemtit_wrap .item_title.alpha:hover{top: 7vh;width: 150px;}            
 .itemtit_wrap .item_title.about{background-color: #21b8fd;z-index: 2;position: absolute;margin-top:-10vh;width: 95px;top:60vh;height:auto;overflow: hidden;}
 .itemtit_wrap .item_title.about:hover{width:130px;}
@@ -53,7 +53,7 @@
 
 .topitem_box{position: relative;flex-grow: 7;overflow: hidden;width:0;transition: 0.3s ease-in;}
 .topitem_box.hov{flex-grow: 13;}
-.topitem_box.show{width:;transition: 0.3s ease-in;flex-grow:55;}
+.topitem_box.show{transition: 0.3s ease-in;flex-grow:55;}
 .topitem_box .topitem{overflow: hidden;min-height: 100vh;position: absolute;top:0;left: 0;;transition: 0.3s ease-in;width:48vw;padding:0 3vw 0 0;}
 .topitem_box .topitem.hov{z-index: 99!important;-webkit-transform: translateZ(0);padding:0 3vw 0 0;}
 .topitem_box .topitem.zindex{z-index: 99!important;-webkit-transform: translateZ(0)}
@@ -64,7 +64,7 @@
 #contact_txt{background-color:#75e440 ;z-index: ;left:0px;-webkit-transform: translateZ(0)}
 
 .topitem_box .topitem.on{width:48vw;z-index: 9!important;-webkit-transform: translateZ(0)}
-.topitem_box .topitem .title_content{overflow: hidden;width:100%;padding:0 0 0 1vw;transition: 0.2s ease-in-out;}
+.topitem_box .topitem .title_content{overflow: scroll;width:100%;padding:0 0 0 1vw;transition: 0.2s ease-in-out;}
 .topitem_box.hov .topitem .title_content{padding:0 0 0 1vw;transition: 0.2s ease-in-out;}
 .topitem_box .topitem.on .title_content{padding:0 0 0 1vw;transition: 0.2s ease-in-out;}
 
