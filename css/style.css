@@ -626,7 +626,19 @@
   }
   
   @media (max-width: 770px) {
-    
+    .book_shadow,
+    .book_shadow_1,
+    .book_shadow_2,
+    .book_shadow_3,
+    .book_shadow_4,
+    .book_shadow_5,
+    .book_shadow_6,
+    .book_shadow_7,
+    .book_shadow_8,
+    .book_shadow_9,
+    #mobilenone {
+      display: none;
+    }
   }
   
   
