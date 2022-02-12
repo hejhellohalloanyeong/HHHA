@@ -144,3 +144,32 @@
     #alphabet_txt{left:0;width:100%;}
     #about_txt{left:0;width:100%;}
     #contact_txt{left:0;width:100%;}
+
+    
+    .title_content {
+      grid-template-columns: 1fr;
+    }
+    #about_text, #generatorLabel, #emailLabel, #messageLabel, #sendButton {
+      font-size: 4vw;
+    }
+    #about_text_eng{
+      display: none;
+    }
+    #emailLabel, #messageLabel, #sendButton{
+      margin-left: 3%;
+    }
+    .desText, .Text, .Name{
+      font-size: 3.3vw;
+    }
+    .work_container{ 
+      grid-template-columns: 1fr;
+    }
+    .Text{
+      margin-left: 2%;
+      display: inline;
+    }
+    
+    .Name{
+      margin-left: 2%;
+      display: inline;
+    }
