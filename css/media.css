@@ -269,9 +269,19 @@
 @media (max-width: 770px) {
 
   .spinimage #postit{
-    width: 12rem;
+    width: 10rem;
+
   }
 
+  .spinimage {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-52%, -57%);
+    z-index: 1;
+    margin-left: 0.5rem;
+  }
+  
   .grow {
     height: auto;
     overflow: auto;
