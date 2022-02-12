@@ -35,11 +35,27 @@
 </head>
 
 <body>
+
+     <!--Loading_content-->
+     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+     <div class="loader">
+        <div class="spinimage">
+            <img src="./img/postit_anim_7.gif">
+        </div>
+     </div>
+     <script>
+       $(window).load(function() {
+         $('.loader').fadeOut();
+       });
+     </script>
+     <!--loading_content end-->
+
     
-    <div class="grow" id="container">
+     <div class="grow" id="container">
+
         <!-- HHHA tabs -->
         <div class="itemtit_wrap">
-            <div id="" data-id="hhha_txt" class="item_title hhha" style="">
+            <div id="" data-id="hhha_txt" class="item_title hhha hov" style="">
                 <div>HHHA</div>
             </div>
             <div id="" data-id="alphabet_txt" class="item_title alpha" style="">
@@ -53,51 +69,73 @@
             </div>
 
         </div>
+        <div class="itemline">
+            
+        </div>
         <div class="topitem_box ">
-            <div class="topitem" id="hhha_txt">
+            <!-- Contact -->
+            <div class="topitem " id="contact_txt">
+                <div class="title_content">
+
+                    <!-- modify this form HTML and place wherever you want your form -->
+                    <div class="contact_content">
+                        <p id="about_text">
+                            Feel free to contact us anytime.
+                            <br>언제든지 주저하지 말고 연락주세요.
+                            <br>
+                            <br>hhha.contact@gmail.com
+                            <br><a class="link" href="https://www.instagram.com/hejhellohalloannyeong/"
+                                target="_blank">@hejhellohalloannyeong</a>
+                        </p>
+                    </div>
+
+                    <div class="contact_form">
+                        <form action="https://formspree.io/f/xbjwrbld" method="POST">
+                            <p id="emailLabel">
+                                Your email
+                                <input type="email" name="_replyto" id="emailInput">
+                            </p>
+                            <p id="messageLabel">
+                                Drop us a line!
+                                <textarea name="message" id="messageInput"></textarea>
+                            </p>
+                            <!-- your other form fields go here -->
+                            <button type="submit" id="sendButton">Send</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="back">
+                    ← BACK
+                </div>
+            </div>
+            <!-- About -->
+            <div class="topitem " id="about_txt">
                 <div class="title_content">
                     <p id="about_text">
-                        HHHA: hejhellohalloannyeong
-                        <br>
-                        <br>
-                        《Hej Hello Hallo Annyeong》 (이하 HHHA)은 2021년 1월 29일 첫 모임을 시작으로 여성 창작자들이 모여 웹 기반의
-                        작업물들을 공유하고 연구해 나가는 스터디그룹입니다.
-                        <a class="link" href="https://www.instagram.com/shin_naree/" target="_blank">신나리</a>,
-                        <a class="link" href="https://dahyunhwang.com/" target="_blank">황다현</a>,
-                        <a class="link" href="http://ete.cool/" target="_blank">윤여름</a>,
-                        <a class="link" href="https://www.instagram.com/_ev_ys/" target="_blank">고윤서</a>,
-                        <a class="link" href="https://eunjuhong.com/" target="_blank">홍은주</a>,
-                        <a class="link" href="https://www.instagram.com/da_hyonni/" target="_blank">박정수</a>,
-                        <a class="link" href="http://www.shellykim.com/shellers/" target="_blank">김초원</a>,
-                        <a class="link" href="https://www.instagram.com/gadongkim/" target="_blank">김가현</a>으로
-                        구성된 HHHA은 독일 브레멘, 바이마르, 뒤셀도르프, 덴마크 코펜하겐, 한국 서울 등 서로 다른 도시에 거주하며, 코로나19 시대에 온라인
-                        소통을 통해서 결성된 점이 특징입니다. 작년부터 도래한 언택트 시대에 동양 여성으로서 서양 문화권에서 살아남는다는 것은 우리에게 매우 어려운
-                        과제가 되었고, 사회적 활동을 위해 네트워크 및 가상세계에 대한 접속은 필수 불가결한 것이 되었습니다. 젠더 간 불평등, 인종 간의 불평등이
-                        심화되는 상황에서 우리는 국가 간의 경계를 허물고 소통하기 위해 웹을 기반으로 함께 연대하며 고민합니다.
+                        프로그래밍 세계에서 언어를 배울 때 첫 번째 단계로 “Hello, world!”를 출력하는 것이 암묵적인 규칙으로 자리 잡게 되었습니다.
+                        스크린에 성공적으로 출력된 인사말은 우리에게 항상 짜릿함과 희열감을 안겨줍니다. 세상에 말을 건네는 듯한 이 메시지는 우리의 실험에 필수적인
+                        문장이 되었습니다. 구성원들과 연관이 있는 나라의 언어로 번역하면 “Hej Verden!(덴마크)”, “Hallo Welt!(독일)”, “안녕
+                        세계!” 혹은 “Annyeoung Segye!(한국)”가 되는데, 이 인사말을 모두 합친
+                        <mark>
+                            Hej Hello Hallo Annyeong
+                        </mark>
+                        이라는 그룹명을 만들었고, 간략하게 줄인 HHHA를 그룹의 준말로 사용합니다.
                     </p>
-                    <p id="about_text" ;=";">
-                        HHHA: hejhellohalloannyeong
-                        <br>
-                        <br>
-                        《Hej Hello Hallo Annyeong》 (hereafter referred to as HHHA) is a study group
-                        where female creators gather to share and explore web-based works, starting with
-                        the first meeting on January 29, 2021. The members of HHHA, who are
-                        <a class="link" href="https://www.instagram.com/shin_naree/" target="_blank">Naree Shin</a>,
-                        <a class="link" href="https://dahyunhwang.com/" target="_blank">Dahyun Hwang</a>,
-                        <a class="link" href="http://ete.cool/" target="_blank">Yeoleum Yun</a>,
-                        <a class="link" href="https://www.instagram.com/_ev_ys/" target="_blank">Yunseo Go</a>,
-                        <a class="link" href="https://eunjuhong.com/" target="_blank">Eunju Hong</a>,
-                        <a class="link" href="https://www.instagram.com/da_hyonni/" target="_blank">Jungsu Park</a>,
-                        <a class="link" href="http://www.shellykim.com/shellers/" target="_blank">Chowon Kim</a>,
-                        <a class="link" href="https://www.instagram.com/gadongkim/" target="_blank">Gahyun Kim</a>
-                        live in various places such as Germany, Denmark, and Korea. HHHA was founded by
-                        online communication in the era of COVID -19. In the untact era that began in
-                        2020, surviving in Western culture as an Asian woman has become a very difficult
-                        task for us, and accessing networks and virtual worlds for social activities has
-                        become indispensable. In a situation where gender inequality and racial
-                        inequality is worsening, we are working together on the net to break down
-                        barriers and communicate with each other.
-                    </p>
+                    <!-- <p id="about_text_eng">
+                        In the programming world, printing “Hello, world!” as the first step in learning
+                        a language has become an implicit rule. Greetings successfully printed on the
+                        screen always give us a sense of exhilaration and joy. This message, which
+                        seemed to speak to the world, became an essential sentence in our experiments.
+                        If you translate it into the language of the country you are related to, “Hej
+                        Verden! (Denmark)”, “Hallo Welt! (Germany)”, “안녕 세계!” Or “Annyeoung Segye!
+                        (Korea)”, we created a group name called
+                        <mark>Hej Hello Hallo Annyeong</mark>
+                        that combines all these greetings, and the abbreviated HHHA is used as the
+                        group&#8217;s abbreviation.
+                    </p> -->
+                </div>
+                <div class="back">
+                    ← BACK
                 </div>
             </div>
             <!-- Alphabet proj. -->
@@ -106,11 +144,11 @@
                     <p id="about_text">
                         《알파벳 프로젝트》는 매 2주마다 우연한 단어를 추출하여 프로젝트 참여자 각각의 시선으로 단어를 해석 한 뒤, 디지털 언어(코드)로 풀어내어 시각화 시키는 프로젝트 입니다.
                     </p>
-                    <p id="about_text">
+                    <!-- <p id="about_text_eng">
                         《Alphabet Project》 is a project that extracts random words every two weeks, interprets the words
                         through the eyes of each project participant, and then unpacks them in digital language (code) and
                         visualizes them.
-                    </p>
+                    </p> -->
                     
 
                     <div style="padding:56.25% 0 0 0;position:relative;"><iframe
@@ -118,6 +156,8 @@
                             frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
                             style="position:absolute;top:0;left:0;width:100%;height:100%;" title="HHHA Randomword"></iframe>
                     </div>
+                    <a class="link" href="sites/site01/index.html" target="_blank"
+                    id="generatorLabel">HHHA 랜덤 단어 추출기</a>
                     
                     <div class="wrm">
                         <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
@@ -196,85 +236,74 @@
                             </g>
                         </svg>
 
-                    </div>
-                    <a class="link" href="sites/site01/index.html" target="_blank"
-                        style="font-size: 1.4vw; margin-left: 3%; margin-top:3%;">HHHA Randomword Generator</a>
-
                         <p id="about_text">
-                        </a>
-                        이 프로젝트는 <a class="link" href="http://wrmatters.kr/" target="_blank">whatreallymatters (wrm)</a>의 후원을
-                        받았습니다.
-                        <br>
-                        This project is sponsored by <a class="link" href="http://wrmatters.kr/"
-                            target="_blank">whatreallymatters (wrm)</a>.
-                    </p>
+                            </a>
+                            이 프로젝트는 <a class="link" href="http://wrmatters.kr/" target="_blank">whatreallymatters</a>의 후원을
+                            받았습니다.
+                            <br>
+                            <!-- <span id="about_text_eng">
+                            This project is sponsored by <a class="link" href="http://wrmatters.kr/"
+                                target="_blank">whatreallymatters</a>.
+                            </span> -->
+                        </p>
+                    </div>
+                   
+
+                        
                     <!-- <p id="about_text">
                         This project is sponsored by <a class="link" href="http://wrmatters.kr/"
                             target="_blank">whatreallymatters (wrm)</a>.
                     </p> -->
                 </div>
-            </div>
-            <!-- About -->
-            <div class="topitem " id="about_txt">
-                <div class="title_content">
-                    <p id="about_text">
-                        프로그래밍 세계에서 언어를 배울 때 첫 번째 단계로 “Hello, world!”를 출력하는 것이 암묵적인 규칙으로 자리 잡게 되었습니다.
-                        스크린에 성공적으로 출력된 인사말은 우리에게 항상 짜릿함과 희열감을 안겨줍니다. 세상에 말을 건네는 듯한 이 메시지는 우리의 실험에 필수적인
-                        문장이 되었습니다. 구성원들과 연관이 있는 나라의 언어로 번역하면 “Hej Verden!(덴마크)”, “Hallo Welt!(독일)”, “안녕
-                        세계!” 혹은 “Annyeoung Segye!(한국)”가 되는데, 이 인사말을 모두 합친
-                        <em class="highlight">
-                            Hej Hello Hallo Annyeong
-                        </em>
-                        이라는 그룹명을 만들었고, 간략하게 줄인 HHHA를 그룹의 준말로 사용합니다.
-                    </p>
-                    <p id="about_text">
-                        In the programming world, printing “Hello, world!” as the first step in learning
-                        a language has become an implicit rule. Greetings successfully printed on the
-                        screen always give us a sense of exhilaration and joy. This message, which
-                        seemed to speak to the world, became an essential sentence in our experiments.
-                        If you translate it into the language of the country you are related to, “Hej
-                        Verden! (Denmark)”, “Hallo Welt! (Germany)”, “안녕 세계!” Or “Annyeoung Segye!
-                        (Korea)”, we created a group name called
-                        <em class="highlight">Hej Hello Hallo Annyeong</em>
-                        that combines all these greetings, and the abbreviated HHHA is used as the
-                        group’s abbreviation.
-                    </p>
+                <div class="back">
+                    ← BACK
                 </div>
             </div>
-            <!-- Contact -->
-            <div class="topitem " id="contact_txt">
+            <div class="topitem hov" id="hhha_txt">
                 <div class="title_content">
-
-                    <!-- modify this form HTML and place wherever you want your form -->
-                    <div class="contact_content">
-                        <p id="about_text">
-                            Feel free to contact us anytime.
-                            <br>언제든지 주저하지 말고 연락주세요.
-                            <br>
-                            <br>hhha.contact@gmail.com
-                            <br><a class="link" href="https://www.instagram.com/hejhellohalloannyeong/"
-                                target="_blank">@hejhellohalloannyeong</a>
-                        </p>
-                    </div>
-
-                    <div class="contact_form">
-                        <form action="https://formspree.io/f/xbjwrbld" method="POST">
-                            <p id="emailLabel">
-                                Your email
-                                <input type="email" name="_replyto" id="emailInput">
-                            </p>
-                            <p id="messageLabel">
-                                Drop us a line!
-                                <textarea name="message" id="messageInput"></textarea>
-                            </p>
-                            <!-- your other form fields go here -->
-                            <button type="submit" id="sendButton">Send</button>
-                        </form>
-                    </div>
+                    <p id="about_text">
+                        《Hej Hello Hallo Annyeong》 (이하 HHHA)은 2021년 1월 29일 첫 모임을 시작으로 여성 창작자들이 모여 웹 기반의
+                        작업물들을 공유하고 연구해 나가는 스터디그룹입니다.
+                        <a class="link" href="https://www.instagram.com/shin_naree/" target="_blank">신나리</a>,
+                        <a class="link" href="https://dahyunhwang.com/" target="_blank">황다현</a>,
+                        <a class="link" href="http://ete.cool/" target="_blank">윤여름</a>,
+                        <a class="link" href="https://www.instagram.com/_ev_ys/" target="_blank">고윤서</a>,
+                        <a class="link" href="https://eunjuhong.com/" target="_blank">홍은주</a>,
+                        <a class="link" href="https://www.instagram.com/da_hyonni/" target="_blank">박정수</a>,
+                        <a class="link" href="http://www.shellykim.com/shellers/" target="_blank">김초원</a>,
+                        <a class="link" href="https://www.instagram.com/gadongkim/" target="_blank">김가현</a>으로
+                        구성된 HHHA은 독일 브레멘, 바이마르, 뒤셀도르프, 덴마크 코펜하겐, 한국 서울 등 서로 다른 도시에 거주하며, 코로나19 시대에 온라인
+                        소통을 통해서 결성된 점이 특징입니다. 작년부터 도래한 언택트 시대에 동양 여성으로서 서양 문화권에서 살아남는다는 것은 우리에게 매우 어려운
+                        과제가 되었고, 사회적 활동을 위해 네트워크 및 가상세계에 대한 접속은 필수 불가결한 것이 되었습니다. 젠더 간 불평등, 인종 간의 불평등이
+                        심화되는 상황에서 우리는 국가 간의 경계를 허물고 소통하기 위해 웹을 기반으로 함께 연대하며 고민합니다.
+                    </p>
+                    <!-- <p id="about_text_eng">
+                        《Hej Hello Hallo Annyeong》 (hereafter referred to as HHHA) is a study group
+                        where female creators gather to share and explore web-based works, starting with
+                        the first meeting on January 29, 2021. The members of HHHA, who are
+                        <a class="link" href="https://www.instagram.com/shin_naree/" target="_blank">Naree Shin</a>,
+                        <a class="link" href="https://dahyunhwang.com/" target="_blank">Dahyun Hwang</a>,
+                        <a class="link" href="http://ete.cool/" target="_blank">Yeoleum Yun</a>,
+                        <a class="link" href="https://www.instagram.com/_ev_ys/" target="_blank">Yunseo Go</a>,
+                        <a class="link" href="https://eunjuhong.com/" target="_blank">Eunju Hong</a>,
+                        <a class="link" href="https://www.instagram.com/da_hyonni/" target="_blank">Jungsu Park</a>,
+                        <a class="link" href="http://www.shellykim.com/shellers/" target="_blank">Chowon Kim</a>,
+                        <a class="link" href="https://www.instagram.com/gadongkim/" target="_blank">Gahyun Kim</a>
+                        live in various places such as Germany, Denmark, and Korea. HHHA was founded by
+                        online communication in the era of COVID -19. In the untact era that began in
+                        2020, surviving in Western culture as an Asian woman has become a very difficult
+                        task for us, and accessing networks and virtual worlds for social activities has
+                        become indispensable. In a situation where gender inequality and racial
+                        inequality is worsening, we are working together on the net to break down
+                        barriers and communicate with each other.
+                    </p> -->
                 </div>
-
-            </div>
+                <div class="back">
+                    ← BACK
+                </div>
+            </div>            
         </div>
+    
         
         <!--Main Contents-->
         <div class="item" style="color:white;" id="mobilenone">
@@ -2069,7 +2098,7 @@
 
     <div class="translate">
         <div class="language">
-            <a href="index.html">🌎</a>
+            <a href="index.html">EN</a>
         </div>
     </div>
 
