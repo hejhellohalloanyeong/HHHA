@@ -353,7 +353,7 @@
 
   .work_wrap {
     overflow: auto;
-    height: 85vh;
+    height: 68vh;
   }
 
   .contact_form {
@@ -498,24 +498,25 @@
 
   .work_container {
     display: grid;
-grid-template-columns: repeat(3, 1fr);
-grid-template-rows: repeat(4, 1fr);
+grid-template-columns: repeat(4, 1fr);
+grid-template-rows: repeat(4, 0.8fr) 1.5fr;
 grid-column-gap: 0px;
 grid-row-gap: 0px;
   }
 
   .video {
-    grid-area: 1 / 1 / 4 / 4;
+    grid-area: 1 / 1 / 5 / 5;
   }
 
   .Text {
     margin-left: 2%;
     display: inline;
-    grid-area: 4 / 1 / 5 / 3; 
+    grid-area: 5 / 1 / 6 / 4; 
   }
 
   .Name {
     margin-left: 2%;
     display: inline;
-    grid-area: 4 / 3 / 5 / 4;
+    grid-area: 5 / 4 / 6 / 5;
   }
+}
