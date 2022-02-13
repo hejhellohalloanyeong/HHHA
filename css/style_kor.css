@@ -69,18 +69,17 @@ li {
 }
 
 .link {
-  text-decoration: solid underline rgb(26, 26, 26) 0.8px;
+  text-decoration: solid underline rgb(26, 26, 26) 1.5px;
   text-underline-offset: 2.6px;
-  -webkit-text-decoration: solid underline rgb(26, 26, 26) 0.8px;
+  -webkit-text-decoration: solid underline rgb(26, 26, 26) 1.5px;
   -webkit-text-underline-offset: 2.6px;
 }
 
 .link:hover {
-  text-decoration: solid underline rgb(26, 26, 26) 0.8px;
-  ;
+  text-decoration: solid underline rgb(26, 26, 26) 1.5px;
   text-underline-offset: 2.6px;
   color: #0274F7;
-  -webkit-text-decoration: solid underline rgb(26, 26, 26) 0.8px;
+  -webkit-text-decoration: solid underline rgb(26, 26, 26) 1.5px;
   -webkit-text-underline-offset: 2.6px;
   -webkit-color: #0274F7;
 }
