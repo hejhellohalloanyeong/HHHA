@@ -81,12 +81,12 @@ li {
   } */
 
 .link {
-  text-decoration: solid underline rgb(26, 26, 26) 0.6px;
+  text-decoration: solid underline rgb(26, 26, 26) 1.5px;
   text-underline-offset: 2.6px;
 }
 
 .link:hover {
-  text-decoration: solid underline rgb(26, 26, 26) 0.6px;
+  text-decoration: solid underline rgb(26, 26, 26) 1.5px;
   text-underline-offset: 2.6px;
   color: #0274F7;
 }
