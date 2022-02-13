@@ -40,7 +40,7 @@
 .itemtit_wrap {
   overflow: hidden;
   width: 85px;
-  flex-grow: 1;
+  flex-grow: 0;
 }
 
 .itemtit_wrap .item_title {
