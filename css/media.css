@@ -556,6 +556,13 @@
     background-color: #bebebe;
   }
 
+  #link {
+    text-decoration: solid underline black 1px !important;
+    text-underline-offset: 2px !important;
+    -webkit-text-decoration: solid underline black 1px;
+    -webkit-text-underline-offset: 2.6px;
+  }
+
   .link {
     text-decoration: solid underline black 1px !important;
     text-underline-offset: 2px !important;
