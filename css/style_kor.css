@@ -68,22 +68,19 @@ li {
   padding: 0;
 }
 
-.link {
-  text-decoration: solid underline rgb(26, 26, 26) 1.5px !important;
-  text-underline-offset: 2.6px !important;
-  -webkit-text-decoration: solid underline rgb(26, 26, 26) 1.5px;
-  -webkit-text-underline-offset: 2.6px;
-  background-color: #f7e432;
+#hhha_txt .link{
+  background-color: black;
+  color: #fd3fa1;
 }
 
-.link:hover {
-  text-decoration: solid underline rgb(26, 26, 26) 1.5px !important;
-  text-underline-offset: 2.6px !important;
-  color: #0274F7 !important;
-  -webkit-text-decoration: solid underline rgb(26, 26, 26) 1.5px;
-  -webkit-text-underline-offset: 2.6px;
-  -webkit-color: #0274F7;
-  background-color: #f7e432;
+#alphabet_txt .link{
+  background-color: black;
+  color: #FFE749;
+}
+
+#contact_txt .link{
+  background-color: black;
+  color: #75e440;
 }
 
 .grow {
