@@ -69,16 +69,16 @@ li {
 }
 
 .link {
-  text-decoration: solid underline rgb(26, 26, 26) 1.5px;
-  text-underline-offset: 2.6px;
+  text-decoration: solid underline rgb(26, 26, 26) 1.5px !important;
+  text-underline-offset: 2.6px !important;
   -webkit-text-decoration: solid underline rgb(26, 26, 26) 1.5px;
   -webkit-text-underline-offset: 2.6px;
 }
 
 .link:hover {
-  text-decoration: solid underline rgb(26, 26, 26) 1.5px;
-  text-underline-offset: 2.6px;
-  color: #0274F7;
+  text-decoration: solid underline rgb(26, 26, 26) 1.5px !important;
+  text-underline-offset: 2.6px !important;
+  color: #0274F7 !important;
   -webkit-text-decoration: solid underline rgb(26, 26, 26) 1.5px;
   -webkit-text-underline-offset: 2.6px;
   -webkit-color: #0274F7;
@@ -317,7 +317,8 @@ li {
   height: 5vh;
   border: none;
   border-radius: 20px;
-  box-shadow: 1px 0px 10px 0px rgb(61, 61, 61);
+  box-shadow: 1px 0px 10px 0px rgb(61, 61, 61) !important;
+  -webkit-box-shadow: 1px 0px 10px 0px rgb(61, 61, 61);
   padding: 5%;
   font-size: 1.4vw;
   margin: 2%;
@@ -329,7 +330,8 @@ li {
   height: 40vh;
   border: none;
   border-radius: 20px;
-  box-shadow: 1px 0px 10px 0px rgb(61, 61, 61);
+  box-shadow: 1px 0px 10px 0px rgb(61, 61, 61) !important;
+  -webkit-box-shadow: 1px 0px 10px 0px rgb(61, 61, 61);
   padding: 3%;
   font-size: 1.4vw;
   margin: 2%;
