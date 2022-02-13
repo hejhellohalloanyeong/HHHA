@@ -68,30 +68,21 @@ li {
   padding: 0;
 }
 
-/* em{
-    text-decoration: solid underline purple 4px;
-    text-decoration: wavy underline #0274F7 1.5px!important;
-    text-underline-offset: 0.05rem;
-    font-style: normal;
-    text-decoration-thickness: 0.1%;
-  } */
-/*   
-  .highlight {
-    background-color:#FFE749;
-  }
-   */
 .link {
-  text-decoration: solid underline rgb(26, 26, 26) 0.6px;
-  ;
+  text-decoration: solid underline rgb(26, 26, 26) 0.8px;
   text-underline-offset: 2.6px;
-
+  -webkit-text-decoration: solid underline rgb(26, 26, 26) 0.8px;
+  -webkit-text-underline-offset: 2.6px;
 }
 
 .link:hover {
-  text-decoration: solid underline rgb(26, 26, 26) 0.6px;
+  text-decoration: solid underline rgb(26, 26, 26) 0.8px;
   ;
   text-underline-offset: 2.6px;
   color: #0274F7;
+  -webkit-text-decoration: solid underline rgb(26, 26, 26) 0.8px;
+  -webkit-text-underline-offset: 2.6px;
+  -webkit-color: #0274F7;
 }
 
 .grow {
@@ -350,15 +341,17 @@ li {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  color: black;
+  -webkit-color: black;
+  -moz-color: black;
   font-size: 1.4vw;
   font-family: 'Lausanne', 'Neutronic';
   /* margin-top: -5%; */
   position: absolute;
   border-radius: 25px;
-  /* color: white; */
+  border: none;
   background-color: #FFE749;
   box-shadow: 1px 0px 10px 0px rgb(61, 61, 61);
-  border: 0px solid black;
   padding: 2%;
   width: 6vw;
 }
