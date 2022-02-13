@@ -85,6 +85,8 @@ li {
   text-underline-offset: 2.6px !important;
   -webkit-text-decoration: solid underline black 1.5px;
   -webkit-text-underline-offset: 2.6px;
+  -moz-text-decoration: solid underline black 1.5px;
+  -moz-text-underline-offset: 2.6px;
 }
 
 .link:hover {
@@ -92,6 +94,8 @@ li {
   text-underline-offset: 2.6px !important;
   -webkit-text-decoration: solid underline black 1.5px;
   -webkit-text-underline-offset: 2.6px;
+  -moz-text-decoration: solid underline black 1.5px;
+  -moz-text-underline-offset: 2.6px;
   color: #0274F7;
 }
 
@@ -324,11 +328,13 @@ li {
 }
 
 #emailInput {
-  width: 42vw;
+  width: 22vw;
   height: 5vh;
   border: none;
   border-radius: 20px;
-  box-shadow: 1px 0px 10px 0px rgb(61, 61, 61);
+  box-shadow: 1px 0px 10px 0px rgb(61, 61, 61) !important;
+  -webkit-box-shadow: 1px 0px 10px 0px rgb(61, 61, 61);
+  -moz-box-shadow: 1px 0px 10px 0px rgb(61, 61, 61);
   padding: 5%;
   font-size: 1.4vw;
   margin: 2%;
@@ -336,11 +342,13 @@ li {
 }
 
 #messageInput {
-  width: 42vw;
+  width: 22vw;
   height: 40vh;
   border: none;
   border-radius: 20px;
-  box-shadow: 1px 0px 10px 0px rgb(61, 61, 61);
+  box-shadow: 1px 0px 10px 0px rgb(61, 61, 61) !important;
+  -webkit-box-shadow: 1px 0px 10px 0px rgb(61, 61, 61);
+  -moz-box-shadow: 1px 0px 10px 0px rgb(61, 61, 61);
   padding: 3%;
   font-size: 1.4vw;
   margin: 2%;

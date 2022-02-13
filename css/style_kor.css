@@ -319,6 +319,7 @@ li {
   border-radius: 20px;
   box-shadow: 1px 0px 10px 0px rgb(61, 61, 61) !important;
   -webkit-box-shadow: 1px 0px 10px 0px rgb(61, 61, 61);
+  -moz-box-shadow: 1px 0px 10px 0px rgb(61, 61, 61);
   padding: 5%;
   font-size: 1.4vw;
   margin: 2%;
@@ -332,6 +333,7 @@ li {
   border-radius: 20px;
   box-shadow: 1px 0px 10px 0px rgb(61, 61, 61) !important;
   -webkit-box-shadow: 1px 0px 10px 0px rgb(61, 61, 61);
+  -moz-box-shadow: 1px 0px 10px 0px rgb(61, 61, 61);
   padding: 3%;
   font-size: 1.4vw;
   margin: 2%;
