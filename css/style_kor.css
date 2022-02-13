@@ -73,6 +73,7 @@ li {
   text-underline-offset: 2.6px !important;
   -webkit-text-decoration: solid underline rgb(26, 26, 26) 1.5px;
   -webkit-text-underline-offset: 2.6px;
+  background-color: #f7e432;
 }
 
 .link:hover {
@@ -82,6 +83,7 @@ li {
   -webkit-text-decoration: solid underline rgb(26, 26, 26) 1.5px;
   -webkit-text-underline-offset: 2.6px;
   -webkit-color: #0274F7;
+  background-color: #f7e432;
 }
 
 .grow {
