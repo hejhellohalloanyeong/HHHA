@@ -351,15 +351,17 @@ li {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  color: black;
+  -webkit-color: black;
+  -moz-color: black;
   font-size: 1.4vw;
   font-family: 'Lausanne', 'Neutronic';
   /* margin-top: -5%; */
   position: absolute;
   border-radius: 25px;
-  /* color: white; */
+  border: none;
   background-color: #FFE749;
   box-shadow: 1px 0px 10px 0px rgb(61, 61, 61);
-  border: 0px solid black;
   padding: 2%;
   width: 6vw;
 }
