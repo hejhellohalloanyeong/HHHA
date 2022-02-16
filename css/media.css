@@ -397,19 +397,19 @@
 
   #emailInput {
     display: block;
-    width: 85%;
+    width: 100%;
     box-sizing: border-box;
   }
 
   #messageInput {
     display: block;
-    width: 85%;
+    width: 100%;
     box-sizing: border-box;
     resize: none;
   }
 
   #sendButton {
-    width: 85%;
+    width: 35%;
     box-sizing: border-box;
     height: 10vw;
     margin-top: 2vw
