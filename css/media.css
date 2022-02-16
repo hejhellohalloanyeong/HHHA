@@ -269,12 +269,12 @@
 /** Ghost cursor 를 위한 z-index 0 처리 **/
 .item_open {
   overflow-x: hidden;
-  z-index: 0;
+  z-index: 0 !important;
 }
 
 /* Mobile */
 .grow .item {
-  z-index: 0;
+  z-index: 0 !important;
 }
 
 @media (max-width: 770px) {
