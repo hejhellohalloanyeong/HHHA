@@ -223,19 +223,19 @@
 .topitem_box .topitem .title_content {
   overflow: scroll;
   width: 100%;
-  padding: 0 0 0 1vw;
+  padding: 0 0 0 0vw;
   transition: 0.2s ease-in-out;
 }
 
 .topitem_box.hov .topitem .title_content {
-  padding: 0 0 0 1vw;
+  padding: 0 0 0 0vw;
   transition: 0.2s ease-in-out;
 }
 
 .topitem_box .topitem.on .title_content {
   overflow-y: scroll;
   height: 100vh;
-  padding: 0 0 0 1vw;
+  padding: 0 0 0 0vw;
   transition: 0.2s ease-in-out;
 }
 
