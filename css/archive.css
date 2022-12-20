@@ -1,16 +1,5 @@
-@font-face {
-    font-family: Neutronic;
-    src: url("../font/Neutronic/NeutronicHangeul-Regularv0.3.woff2") format("woff2");
-    unicode-range: U+AC00-U+D7A3;
-}
-
-@font-face {
-    font-family: Lausanne;
-    src: url("../font/TWKLausanne/TWKLausanne-350.woff") format("woff2");
-}
-
 :root {
-    --depth: 350px;
+    --depth: 400px;
     --turnLeft: 0.06turn;
     --turnRight: -0.06turn;
     --turn: var(--turnRight);
@@ -35,48 +24,24 @@ body {
     scroll-snap-type: y mandatory;
     background: hsl(0 0% 10%);
     perspective: 2000px;
-    perspective-origin: 20% 20%;
-    font-family: 'Lausanne';
-}
-
-h1 {
-    line-height: 1.2;
-    background: rgb(255,255,255);
-    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(216,216,215,1) 100%);
-    padding-bottom: 0.5rem;
-    padding-top: 1.2rem;
-    font-size: 6.35vw;
-    text-align: center;
+    perspective-origin: 50% 50%;
 }
 
 .building {
     transform-style: preserve-3d;
-    grid-template-columns: repeat(2, 1fr);
-    display: grid;
 }
 
 .room {
     position: relative;
-    border-left: 10px solid #D8D8D7;
-    border-bottom: 10px solid #D8D8D7;
-    border-right: 10px solid #D8D8D7;
+    border: 8px solid #D8D8D7;
     height: 20vh;
-    width: 50vw;
+    width: 100vw;
     scroll-snap-align: center;
     transform-style: preserve-3d;
 }
 
-.room:nth-child(odd) {
-    border-right: 0px solid #D8D8D7;
-}
-
-.room:nth-child(1),
-.room:nth-child(2) {
-    border-top: 10px solid #D8D8D7;
-}
-
 .room+.room {
-    /* border-bottom: 10px; */
+    border-top: 0;
 }
 
 .room::before,
@@ -91,7 +56,7 @@ h1 {
 
 .room::before {
     background:
-        radial-gradient(circle, rgb(226, 226, 226) 0%, rgba(111, 111, 111, 1) 100%);
+        radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(111, 111, 111, 1) 100%);
     transform: rotatex(-90deg) scale(1.001);
     transform-origin: center top;
 }
@@ -99,7 +64,7 @@ h1 {
 .room::after {
     bottom: 0;
     background:
-        radial-gradient(circle, rgba(226, 226, 226, 1) 0%, rgba(111, 111, 111, 1) 100%);
+        radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(111, 111, 111, 1) 100%);
     transform: rotatex(90deg);
     transform-origin: center bottom;
 }
@@ -107,8 +72,13 @@ h1 {
 .room-walls {
     position: absolute;
     inset: 0;
+    /* background:
+        linear-gradient(to top, hsl(0 0% 90%) 2.5vh, transparent 0),
+        radial-gradient(hsl(0 0% 0% / 30%), hsl(0 0% 0% / 50%)),
+        url(imgs/2.jpg) center / cover,
+        darkgray; */
     background:
-        radial-gradient(circle, rgba(226, 226, 226, 1) 0%, rgba(111, 111, 111, 1) 100%);
+        radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(111, 111, 111, 1) 100%);
     transform: translatez(calc(var(--depth) * -1));
     transform-style: preserve-3d;
 }
@@ -124,7 +94,10 @@ h1 {
 .room-walls::before {
     right: 100%;
     /* background:
-        url(imgs/3.jpg) center / cover; */
+        linear-gradient(to top, hsl(0 0% 75%) 2.5vh, transparent 0),
+        radial-gradient(hsl(0 0% 100% / 10%), hsl(0 0% 0% / 10%)),
+        url(imgs/3.jpg) center / cover,
+        gray; */
     background:
         radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(111, 111, 111, 1) 100%);
     transform: rotatey(90deg);
@@ -133,6 +106,11 @@ h1 {
 
 .room-walls::after {
     left: 100%;
+    /* background:
+        linear-gradient(to top, hsl(0 0% 75%) 2.5vh, transparent 0),
+        radial-gradient(hsl(0 0% 100% / 10%), hsl(0 0% 0% / 10%)),
+        url(imgs/4.jpg) center / cover,
+        gray; */
     background:
         radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(111, 111, 111, 1) 100%);
     transform: rotatey(-90deg);
